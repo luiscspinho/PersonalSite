@@ -1,0 +1,28 @@
+{
+  "name": "Pinho",
+  "version": "0.0.1",
+  "description": "Personal Site",
+  "repository": {
+  },
+   "author": "Luís Pinho",
+  "bugs": {
+    "url": "https://github.com/antoniocapelo/awty/issues"
+  },
+  "homepage": "https://github.com/antoniocapelo/awty",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^0.7.5",
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-csso": "^0.2.9",
+    "gulp-jshint": "^1.8.4",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-sass": "^0.7.2",
+    "gulp-uglify": "^0.3.1",
+    "jshint-stylish": "^0.4.0",
+    "multipipe": "^0.1.1"
+  }
+}
