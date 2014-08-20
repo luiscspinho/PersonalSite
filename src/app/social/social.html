@@ -1,0 +1,20 @@
+<div class="secondStage">
+
+    <div class="bossContainer">
+        <div class="bossDescription">oasdoasd</div>
+        <div class="bossImage circular"></div>
+    </div>
+    <div class="socialNetworks" ng-controller="socialController">
+        <a class="mega-anchor" href="{{social.link}}" target="_blank" title="{{social.name}}"
+        ng-repeat="social in socialNetworks">
+            <div ng-if="social.animation" class="{{social.className}}" ng-mouseover="events.mouseEnter(social)" ng-class="{'facebookDisabled': !social.enable}">
+            </div>
+            <img ng-if="!social.animation" ng-src="{{social.path}}" class="{{social.className}}">
+            </img>
+            <div social class="descriptionContainer">
+                <div class="socialDescriptionBefore">{{social.dataHover}}</div>
+                <div class="socialDescription">{{social.description}}</div>
+            </div>
+          </a>
+    <div class="faceError">404</div>
+</div>

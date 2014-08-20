@@ -14,38 +14,37 @@
             <div class="greetingsTraveller">
                 Greetings Traveller!
             </div>
-            <div class="bossImage circular"></div>
         </div>
         <!--404 A APARECER E TIRAR O HOVER DOS-->
         <!--SECOND CENAS-->
 
         <div class="secondStage" scroll >
-           <div class="socialNetworks" ng-controller="socialController">
+
+            <div class="bossContainer">
+                <div class="bossDescription">oasdoasd</div>
+                <div class="bossImage circular"></div>
+            </div>
+            <div class="socialNetworks" ng-controller="socialController">
                 <a class="mega-anchor" href="{{social.link}}" target="_blank" title="{{social.name}}"
                 ng-repeat="social in socialNetworks">
                     <div ng-if="social.animation" class="{{social.className}}" ng-mouseover="events.mouseEnter(social)" ng-class="{'facebookDisabled': !social.enable}">
                     </div>
                     <img ng-if="!social.animation" ng-src="{{social.path}}" class="{{social.className}}">
                     </img>
-                    <div class="descriptionContainer" data-hover="{{social.dataHover}}">
-                        <div class="socialDescription" >{{social.description}}</div>
+                    <div social class="descriptionContainer">
+                        <div class="socialDescriptionBefore">{{social.dataHover}}</div>
+                        <div class="socialDescription">{{social.description}}</div>
                     </div>
                 </a>
                 <div class="faceError">404</div>
             </div>
+        <!--<social></social>-->
 
-        <!--<div ng-controller="navigationController" class="navigationBar" ng-class="{'fixed':onHeader}" >
-            <ul>
-                <li ng-repeat="item in navigationOptions">
-                    <a class="navigation-option" href="#{{item.link}}" ng-click="setTab($index)">{{item.description}}</a>
-                </li>
-            </ul>
-        </div>-->
         <div id="footer" class="footer">
 
         </div>
         <script src="/scripts/angular.min.js"></script>
-        <script src = "src/app/app.js"></script>
+        <script src="src/app/app.js"></script>
     </body>
 
 </html>

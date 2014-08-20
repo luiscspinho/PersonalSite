@@ -1,25 +1,5 @@
 var app = angular.module('personalSite', []);
 
-app.controller('navigationController', ['$scope', function($scope){
-  $scope.navigationOptions = [
-                {
-                    description: "Home",
-                    link: "TOP"
-                },
-                {
-                    description: "About Me",
-                    link: "footer"
-                },
-                {
-                    description: "Interests",
-                },
-                {
-                    description: "CV"
-                },
-                {
-                    description: "Contact"
-                }];
-}]);
 
 app.controller('socialController', ['$scope', function($scope){
     $scope.socialNetworks = [
@@ -45,7 +25,7 @@ app.controller('socialController', ['$scope', function($scope){
                     name: "GitHub",
                     link: "https://github.com/luiscspinho/",
                     description: "Some code of my own?",
-                    dataHover: "Be carefull...",
+                    dataHover: "Be careful...",
                     className: "socialIcon",
                     path: "/assets/github.png",
                     animation: false
@@ -82,22 +62,14 @@ app.controller('socialController', ['$scope', function($scope){
 app.directive("social", function () {
     return {
         restrict: 'A',
+        //templateUrl: 'src/app/social/social.html',
         link: function ($scope, element, attrs) {
+            element.bind('mouseenter', function() {
+                if($scope.social.animation && !$scope.enable){
+                    element.addClass('fixedFace');
+                    angular.element(document.getElementsByClassName('facebookIcon')).addClass('facebookDisabled');
+                }
+            });
         }
-    };
-});
-
-app.directive("scroll", function ($window) {
-    return {
-        restrict: 'A',
-        controller: 'navigationController',
-        link: function ($scope, element, attrs) {
-                window.addEventListener('scroll', function(ev) {
-                    $scope.onHeader = false;
-                    $scope.enableBar = element[0].offsetTop;
-                    $scope.onHeader = (window.pageYOffset >= $scope.enableBar);
-                    $scope.$apply();
-                });
-            }
     };
 });
