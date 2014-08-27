@@ -190,35 +190,34 @@
     opacity: 1; } }
 
 @-webkit-keyframes errorAnim {
-  50% {
+  40% {
     opacity: 0;
     width: 100px;
     height: 100px; }
 
   100% {
-    bottom: 90px;
+    bottom: 180px;
     opacity: 1;
     width: 100px;
     height: 100px; } }
 
 @keyframes errorAnim {
-  50% {
+  40% {
     opacity: 0;
     width: 100px;
     height: 100px; }
 
   100% {
-    bottom: 90px;
+    bottom: 180px;
     opacity: 1;
     width: 100px;
     height: 100px; } }
 
 .faceError {
-  display: inline-block;
-  margin-left: -60px;
-  bottom: 50px;
+  margin-left: 60px;
+  bottom: 150px;
   opacity: 0;
-  position: absolute;
+  position: relative;
   z-index: 1;
   background-image: url('/assets/idontlike.png');
   background-repeat: no-repeat;
@@ -254,14 +253,9 @@
   -ms-transform: translateX(-7%);
       transform: translateX(-7%); }
 
-.cenas:hover .facebookIcon {
-  filter: none;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale"); }
-
 @media screen and (max-width: 1500px) {
+  .bossImage {
+    display: none; }
   .socialIcon {
     height: 50px;
     margin: 100px 10px; }
@@ -269,4 +263,6 @@
     height: 50px;
     background-size: contain;
     background-position: center;
-    margin: 100px 10px; } }
+    margin: 100px 10px; }
+  .faceError {
+    display: none; } }
