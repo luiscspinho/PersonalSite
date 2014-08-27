@@ -7,8 +7,8 @@ app.controller('socialController', ['$scope', function($scope){
                     name: "Twitter",
                     id: "twitter",
                     link: "http://www.twitter.com/LuisCSPinho",
-                    description: "Wanna know where am I flying?",
-                    dataHover: "Or just mess around...",
+                    description: "Want know where am I flying?",
+                    dataHover: "Or you can just mess around!",
                     className: "socialIcon",
                     path: "/assets/twitter.png",
                     animation: false
@@ -18,7 +18,7 @@ app.controller('socialController', ['$scope', function($scope){
                     id: "linkedin",
                     link: "https://www.linkedin.com/in/luiscspinho",
                     description: "Why don't you link with me?",
-                    dataHover: "On LinkedIn only...",
+                    dataHover: "I won't say no.",
                     className: "socialIcon",
                     path: "/assets/linkedin.png",
                     animation: false
@@ -28,7 +28,7 @@ app.controller('socialController', ['$scope', function($scope){
                     id: "github",
                     link: "https://github.com/luiscspinho/",
                     description: "Some code of my own?",
-                    dataHover: "Be careful...",
+                    dataHover: "Be careful.",
                     className: "socialIcon",
                     path: "/assets/github.png",
                     animation: false
@@ -37,8 +37,8 @@ app.controller('socialController', ['$scope', function($scope){
                     name: "Lastfm",
                     id: "lastfm",
                     link: "http://www.last.fm/user/LuisCSPinho",
-                    description: "There is no better music for you to listen",
-                    dataHover: "For real...",
+                    description: "There is no better music for you to listen!",
+                    dataHover: "If you have good taste.",
                     className: "socialIcon",
                     path: "/assets/lastfm.png",
                     animation: false
@@ -48,7 +48,7 @@ app.controller('socialController', ['$scope', function($scope){
                     id: "facebook",
                     link: "http://luispinhodoesnthavefacebook.com/",
                     description: "Simply my facebook page",
-                    dataHover: "Facebook, facebook...",
+                    dataHover: "Oh noes, you didn't...",
                     className: "facebookIcon",
                     path: "/assets/blank.png",
                     animation: true,
@@ -56,7 +56,7 @@ app.controller('socialController', ['$scope', function($scope){
                 }
                 ];
 
-    $scope.aboutMeInfo = "Hi. I am a QA Engineer with great passion for automation process, frontend technologies and web development. I am very passionate about Scrum and Agile methodologies.";
+    $scope.aboutMeInfo = "Hello. I am a QA Engineer with great passion for automation process, frontend technologies and web development. I am very passionate about Scrum and Agile methodologies. On spare time I enjoy listening to music and making contact with nature.";
 
     $scope.detailsAboutMe = {
         name: "Luís Pinho",

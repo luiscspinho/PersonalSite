@@ -1,4 +1,7 @@
-*, *:after, *::before {
+* {
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; }
+
+*:after, *::before {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -14,8 +17,14 @@
   bottom: 0; }
 
 .beautyLanding {
-  background-image: url(/assets/snice2.jpg);
-  background-size: 100% 100%;
+  background-image: url(/assets/back2.jpg);
+  /* For WebKit*/
+  /* Mozilla*/
+  /* Opera*/
+  background-size: cover;
+  /* Generic*/
+  background-position: right;
+  background-repeat: no-repeat;
   height: 100%;
   opacity: 0.6;
   -webkit-filter: blur(1px);
@@ -23,7 +32,10 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); }
 
 .greetingsTraveller {
   margin-left: auto;
@@ -61,9 +73,9 @@
       -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
       -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
     .bossContainer .bossInfo .bossImage {
-      background-image: url(/assets/fritz.jpg);
-      background-size: 100%;
-      background-position: 35% 26%;
+      background-image: url(/assets/back6.jpg);
+      background-size: 160%;
+      background-position: 55% 26%;
       float: left;
       -webkit-filter: grayscale(1);
       filter: grayscale(1);
@@ -71,10 +83,10 @@
       margin-left: auto;
       margin-right: auto; }
     .bossContainer .bossInfo .bossImage:hover {
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
+      transform: scale(1.02);
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      -ms-transform: scale(1.02);
       -webkit-filter: none;
       /* Older versions of webkit */
       -moz-filter: none;
@@ -83,7 +95,11 @@
       filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale"); }
 
 .fontTitle {
-  font-size: 30px; }
+  font-size: 30px;
+  border-bottom: 2px solid black; }
+
+.secondStage {
+  position: relative; }
 
 .socialNetworks {
   margin-top: 50px;
@@ -123,8 +139,8 @@
       -moz-opacity: 0.7;
       cursor: default; }
     .socialNetworks .mega-anchor .facebookDisabled {
-      -webkit-animation: disappearAnim 2s linear;
-              animation: disappearAnim 2s linear;
+      -webkit-animation: disappearAnim 1s linear;
+              animation: disappearAnim 1s linear;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards; }
     .socialNetworks .mega-anchor .descriptionContainer {
@@ -155,31 +171,71 @@
       transition: transform 0.3s;
       -webkit-transform: translateX(-25%); }
     .socialNetworks .mega-anchor .fixedFace .socialDescriptionBefore {
-      -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-          transform: translateX(0%); }
+      -webkit-transform: translateX(-7%);
+      -ms-transform: translateX(-7%);
+          transform: translateX(-7%); }
     .socialNetworks .mega-anchor .fixedFace .socialDescription {
       -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%); }
 
 @-webkit-keyframes disappearAnim {
-  50% {
-    background-image: url('/assets/facebookRIP.png');
-    opacity: 1; }
-
   100% {
     background-image: url('/assets/facebookRIP.png');
     opacity: 1; } }
 
 @keyframes disappearAnim {
-  50% {
-    background-image: url('/assets/facebookRIP.png');
-    opacity: 1; }
-
   100% {
     background-image: url('/assets/facebookRIP.png');
     opacity: 1; } }
+
+@-webkit-keyframes errorAnim {
+  50% {
+    opacity: 0;
+    width: 100px;
+    height: 100px; }
+
+  100% {
+    bottom: 90px;
+    opacity: 1;
+    width: 100px;
+    height: 100px; } }
+
+@keyframes errorAnim {
+  50% {
+    opacity: 0;
+    width: 100px;
+    height: 100px; }
+
+  100% {
+    bottom: 90px;
+    opacity: 1;
+    width: 100px;
+    height: 100px; } }
+
+.faceError {
+  display: inline-block;
+  margin-left: -60px;
+  bottom: 50px;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  background-image: url('/assets/idontlike.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: gray;
+          filter: gray;
+  /* IE6-9 */
+  cursor: default; }
+
+.secondStage .socialNetworks .faceErrorAnimation {
+  -webkit-animation: errorAnim 1s linear;
+          animation: errorAnim 1s linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards; }
 
 .mega-anchor:hover .socialDescription {
   -webkit-transform: translateX(100%);
@@ -194,16 +250,16 @@
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale"); }
 
 .mega-anchor:hover .socialDescriptionBefore {
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-      transform: translateX(0%); }
+  -webkit-transform: translateX(-7%);
+  -ms-transform: translateX(-7%);
+      transform: translateX(-7%); }
 
-.faceError {
-  display: inline-block;
-  margin: 0;
-  height: auto;
-  position: absolute;
-  display: none; }
+.cenas:hover .facebookIcon {
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale"); }
 
 @media screen and (max-width: 1500px) {
   .socialIcon {

@@ -9,7 +9,6 @@
     </head>
     <body >
         <div class="beautyLanding"></div>
-
         <div class="landing-on-earth">
             <div class="greetingsTraveller">
                 Greetings Traveller!
@@ -17,9 +16,7 @@
         </div>
         <!--404 A APARECER E TIRAR O HOVER DOS-->
         <!--SECOND CENAS-->
-
         <div class="secondStage" ng-controller="socialController" >
-
             <div class="bossContainer">
                 <div class="bossInfo">
                     <div class="bossDescription">
@@ -45,13 +42,14 @@
                     </div>
                     <img ng-if="!social.animation" ng-src="{{social.path}}" class="{{social.className}}">
                     </img>
-                    <div social class="descriptionContainer">
+                    <div social class="descriptionContainer" ng-mouseover="events.mouseEnter(social)">
                         <div class="socialDescriptionBefore">{{social.dataHover}}</div>
                         <div class="socialDescription">{{social.description}}</div>
                     </div>
+                    <div ng-if="social.animation" ng-class="{'faceErrorAnimation': !social.enable}" class="faceError"></div>
                 </a>
-                <div class="faceError">404</div>
             </div>
+        </div>
         <!--<social></social>-->
 
         <div id="footer" class="footer">
