@@ -1,20 +1,34 @@
-<div class="secondStage">
-
+<section class="secondStage" ng-controller="socialController" >
     <div class="bossContainer">
-        <div class="bossDescription">oasdoasd</div>
-        <div class="bossImage circular"></div>
+        <div class="bossInfo">
+            <div class="bossDescription">
+                <div class="aboutMe fontTitle">About Me</div><p/>
+                {{aboutMeInfo}}
+            </div>
+            <div class="bossImage circular"></div>
+            <div class="bossDesc">
+                <div class="bossDetails fontTitle">Info</div><br>
+                <strong>Name: </strong>
+                {{detailsAboutMe.name}}<br>
+                <strong>Age: </strong>
+                {{detailsAboutMe.age}}<br>
+                <strong>Email: </strong>
+                {{detailsAboutMe.email}}
+            </div>
+        </div>
     </div>
-    <div class="socialNetworks" ng-controller="socialController">
-        <a class="mega-anchor" href="{{social.link}}" target="_blank" title="{{social.name}}"
+    <div class="socialNetworks" >
+        <a class="mega-anchor" href="{{social.link}}" target="_blank" title="{{social.name}}" id="{{social.id}}"
         ng-repeat="social in socialNetworks">
-            <div ng-if="social.animation" class="{{social.className}}" ng-mouseover="events.mouseEnter(social)" ng-class="{'facebookDisabled': !social.enable}">
+            <div social ng-if="social.animation" class="{{social.className}}" ng-mouseover="events.mouseEnter(social)" ng-class="{'facebookDisabled': !social.enable}">
             </div>
             <img ng-if="!social.animation" ng-src="{{social.path}}" class="{{social.className}}">
             </img>
-            <div social class="descriptionContainer">
+            <div social class="descriptionContainer" ng-mouseover="events.mouseEnter(social)">
                 <div class="socialDescriptionBefore">{{social.dataHover}}</div>
                 <div class="socialDescription">{{social.description}}</div>
             </div>
-          </a>
-    <div class="faceError">404</div>
-</div>
+            <div ng-if="social.animation" ng-class="{'faceErrorAnimation': !social.enable}" class="faceError"></div>
+        </a>
+    </div>
+</section>

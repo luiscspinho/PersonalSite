@@ -56,7 +56,7 @@ app.controller('socialController', ['$scope', function($scope){
                 }
                 ];
 
-    $scope.aboutMeInfo = "Hello. I am a QA Engineer with great passion for automation process, Front End technologies and web development. I am very passionate about Scrum and Agile methodologies. On spare time I enjoy listening to music and making contact with nature.";
+    $scope.aboutMeInfo = "Hello. I am a QA Engineer with great passion for automation process, Front End technologies and web development. I am very passionate about Scrum and Agile methodologies. On spare time I enjoy listening to music, reading books and making contact with nature.";
 
     $scope.detailsAboutMe = {
         name: "Luís Pinho",

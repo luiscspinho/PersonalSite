@@ -5,7 +5,6 @@
         <title>Luis Pinho - Awesomeness Inside</title>
         <link rel="stylesheet" href="styles/main.css" />
 
-
     </head>
     <body >
         <div class="beautyLanding"></div>
@@ -14,7 +13,7 @@
                 Greetings Traveller!
             </div>
         </div>
-        <div class="secondStage" ng-controller="socialController" >
+        <section class="secondStage" ng-controller="socialController" >
             <div class="bossContainer">
                 <div class="bossInfo">
                     <div class="bossDescription">
@@ -47,14 +46,42 @@
                     <div ng-if="social.animation" ng-class="{'faceErrorAnimation': !social.enable}" class="faceError"></div>
                 </a>
             </div>
-        </div>
+        </section>
         <!--<social></social>-->
-        <div class="work"></div>
+
+        <section class="skillzSection">
+            <div class="fontTitle">Skillz</div>
+            <div class="skillzContainer" ng-controller="skillzController">
+                <ul>
+                    <li>
+                        <div class="skillzParent">
+                            My Skillz
+                        </div>
+                        <ul>
+                            <li class="skillzFather" ng-repeat="skill in skillz">
+                                <div>
+                                    {{skill.father}}
+                                </div>
+                                <ul ng-if="skill.children.length">
+                                    <li ng-repeat="child in skill.children">
+                                        <div class="skillzChild">
+                                            {{child.child}}
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </section>
+
         <div id="footer" class="footer">
 
         </div>
         <script src="/scripts/angular.min.js"></script>
         <script src="src/app/app.js"></script>
+        <script src="src/app/skillz/skillz.js"></script>
     </body>
 
 </html>
