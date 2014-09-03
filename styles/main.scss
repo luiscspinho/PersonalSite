@@ -60,6 +60,9 @@
     opacity: 0.8;
 }
 
+
+//About me
+
 .bossContainer {
     margin-right: auto;
     margin-left: auto;
@@ -103,19 +106,6 @@
             filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
             margin-left: auto;
             margin-right: auto;
-        }
-
-        .bossImage:hover {
-            transform: scale(1.02);
-            -webkit-transform: scale(1.02);
-            -moz-transform: scale(1.02);
-            -ms-transform:  scale(1.02);
-
-            -webkit-filter: none; /* Older versions of webkit */
-            -moz-filter: none;
-            -o-filter: none;
-            -ms-filter: none; /* IE 10 */
-            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
         }
     }
 }
@@ -187,14 +177,10 @@
                 margin-bottom: 20px;
                 display: block;
                 padding: 10px 20px;
-                background: #e6e6e6;
+                background: white;
                 -webkit-transition: -webkit-transform 0.3s;
                 -moz-transition: -moz-transform 0.3s;
                 transition: transform 0.3s;
-               -moz-box-shadow:    inset 0 0 5px #000000;
-               -webkit-box-shadow: inset 0 0 5px #000000;
-               box-shadow:         inset 0 0 5px #000000;
-
             }
         }
 
@@ -294,210 +280,118 @@
     transform: translateX(-7%);
 }
 
-/*.skillzSection {
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
+//SKILLZ
 
-    .skillzContainer{
-
-        ul{
-            padding-top: 20px;
-            position: relative;
-        }
-
-        li{
-            float: left;
-            text-align: center;
-            list-style-type: none;
-            position: relative;
-            padding: 20px 5px 0 5px;
-        }
-
-        li::before, li::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 50%;
-            border-top: 1px solid #ccc;
-            width: 50%;
-            height: 20px;
-        }
-
-        li::after{
-            right: auto;
-            left: 50%;
-            border-left: 1px solid #ccc;
-        }
-
-        li:only-child::after, li:only-child::before {
-            display: none;
-        }
-
-        li:only-child{
-            padding-top: 0;
-        }
-
-        li:first-child::before, li:last-child::after{
-            border: 0 none;
-        }
-
-        li:last-child::before{
-            border-right: 1px solid #ccc;
-            border-radius: 0 5px 0 0;
-            -webkit-border-radius: 0 5px 0 0;
-            -moz-border-radius: 0 5px 0 0;
-        }
-
-        li:first-child::after{
-            border-radius: 5px 0 0 0;
-            -webkit-border-radius: 5px 0 0 0;
-            -moz-border-radius: 5px 0 0 0;
-        }
-
-        ul ul::before{
-            content: '';
-            position: absolute; top: 0; left: 50%;
-            border-left: 1px solid #ccc;
-            width: 0; height: 20px;
-        }
-
-        li div{
-            border: 1px solid #ccc;
-            padding: 5px 10px;
-            text-decoration: none;
-            color: #666;
-            font-size: 20px;
-            display: inline-block;
-
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-        }
-    }
-}*/
-
-$horizontal-gutter: 100px;
-$border-radius: 10px;
-
-$entry-min-height: 60px;
-
-$label-width: 150px;
-$label-height: 30px;
-$label-border-radius: 5px;
-
+/* Common style */
 .skillzSection {
-    margin-top: 100px;
-    text-align: center;
     display: inline-block;
     width: 100%;
-
-    .skillzContainer {
-
-        ul{
-            position: relative;
-            margin-left: $horizontal-gutter + $label-width;
-
-            &:before {
-              content: "";
-              width: $horizontal-gutter / 1.1;
-              border-top: 2px solid black;
-              position: absolute;
-              left: -$horizontal-gutter;
-              top: 50%;
-              margin-top: 1px;
-            }
-        }
-
-        //Remove draw from without siblings
-        li:only-child::after, li:only-child::before, ul:only-child::after, ul:only-child::before {
-            display: none;
-        }
-
-        li {
-            position: relative;
-            min-height: $entry-min-height;
-            list-style-type: none;
-
-              &:before {
-                content: "";
-                height: 100%;
-                border-left: 2px solid black;
-                position: absolute;
-                left: -($horizontal-gutter / 2);
-              }
-              &:after {
-                content: "";
-                width: $horizontal-gutter / 2;
-                border-top: 2px solid black;
-                position: absolute;
-                left: -($horizontal-gutter / 2);
-                top: 50%;
-                margin-top: 1px;
-              }
-              &:first-child {
-                &:before {
-                  width: $border-radius;
-                  height: 50%;
-                  top: 50%;
-                  margin-top: 2px;
-                  border-radius: $border-radius 0 0 0;
-                }
-                &:after {
-                  height: $border-radius;
-                  border-radius: $border-radius 0 0 0;
-                }
-              }
-              &:last-child {
-                &:before {
-                  width: $border-radius;
-                  height: 50%;
-                  border-radius: 0 0 0 $border-radius;
-                }
-                &:after {
-                  height: $border-radius;
-                  border-top: none;
-                  border-bottom: 2px solid black;
-                  border-radius: 0 0 0 $border-radius;
-                  margin-top: -$border-radius + 1px;
-                }
-              }
-        }
-        div{
-            display: block;
-            min-width: $label-width;
-            padding: 5px 10px;
-            line-height: $label-height - 5px * 2;
-            text-align: center;
-            border: 2px solid black;
-            border-radius: $label-border-radius;
-            position: absolute;
-            top: 50%;
-            margin-top: -($label-height / 2);
-        }
-    }
-
-    /*Animation on lineage*/
-    li div:hover, li div:hover+ul li div {
-        animation: cenas 0.5s linear;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-fill-mode: forwards;
-
-    }
-    /*Connector styles on hover*/
-    /*li div:hover+ul li::after,
-    li div:hover+ul li::before,
-    li div:hover+ul::before,
-    li div:hover+ul ul::before{
-        border-color:  #94a0b4;
-    }*/
 }
 
-@keyframes cenas {
-    from { }
+.grid {
+    overflow: hidden;
+    margin: 0;
+    padding: 3em 0 0 0;
+    //width: 100%;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
 
-    to {    background: -webkit-linear-gradient(top, #febbbc, #ff5b5c);
- }
+.grid figure {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    margin: -0.135em;
+    width: 300px;
+    height: 300px;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figuretag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+ //END
+.skillList {
+    background: -webkit-linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
+}
+
+.skillList img {
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+.skillList:hover img {
+    opacity: 0.4;
+}
+
+
+.skillList:hover figuretag::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.skillList figuretag {
+    padding: 3em;
+    text-align: left;
+}
+
+.skillContainer {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skillList p {
+    right: 60px;
+    bottom: 60px;
+    left: 60px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100px,0);
+    transform: translate3d(0,-150px,0);
+}
+
+.skillList:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,70px,0);
 }
 
 @media screen and (max-width: 1500px) {
@@ -515,6 +409,9 @@ $label-border-radius: 5px;
         margin: 100px 10px;
     }
     .faceError {
+        display: none;
+    }
+    .skillzSection {
         display: none;
     }
 }

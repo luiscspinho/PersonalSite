@@ -13,6 +13,7 @@
                 Greetings Traveller!
             </div>
         </div>
+
         <section class="secondStage" ng-controller="socialController" >
             <div class="bossContainer">
                 <div class="bossInfo">
@@ -49,39 +50,33 @@
         </section>
         <!--<social></social>-->
 
-        <section class="skillzSection">
+        <section class="skillzSection" ng-controller="skillzController">
             <div class="fontTitle">Skillz</div>
-            <div class="skillzContainer" ng-controller="skillzController">
-                <ul>
-                    <li>
-                        <div class="skillzParent">
-                            My Skillz
-                        </div>
-                        <ul>
-                            <li class="skillzFather" ng-repeat="skill in skillz">
-                                <div>
-                                    {{skill.father}}
-                                </div>
-                                <ul ng-if="skill.children.length">
-                                    <li ng-repeat="child in skill.children">
-                                        <div class="skillzChild">
-                                            {{child.child}}
-                                        </div>
-                                    </li>
 
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="grid" ng-repeat="skill in skillz">
+                 
+                        <figure class="skillList">
+                            <img src="assets/{{skill.skillClass}}" alt="Cenas" class="backgroundSkill"/>
+                            <figuretag>
+                                <h2><span>{{skill.father}}</span></h2>
+                                <div class="skillContainer">
+                                    <p ng-repeat="cenas in skill.children">{{cenas.child}}</p>
+                                </div>
+                            </figuretag>
+                        </figure>
+                </div>
+
         </section>
 
         <div id="footer" class="footer">
 
         </div>
+
         <script src="/scripts/angular.min.js"></script>
         <script src="src/app/app.js"></script>
         <script src="src/app/skillz/skillz.js"></script>
+        <script src="src/app/social/social.js"></script>
+
     </body>
 
 </html>

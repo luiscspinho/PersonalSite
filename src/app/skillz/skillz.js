@@ -2,6 +2,7 @@ app.controller('skillzController', ['$scope', function($scope){
     $scope.skillz = [
                 {
                     father: "Web",
+                    skillClass: "back2.JPG",
                     children: [
                         {
                             child: "Javascript"
@@ -19,6 +20,7 @@ app.controller('skillzController', ['$scope', function($scope){
                 },
                 {
                     father: "Tests",
+                    skillClass: "back6.JPG",
                     children: [
                         {
                             child: "Test Automation"
@@ -42,9 +44,11 @@ app.controller('skillzController', ['$scope', function($scope){
                 },
                 {
                     father: "Scrum",
+                    skillClass: "back6.JPG"
                 },
                 {
                     father: "Soft Skills",
+                    skillClass: "back2.JPG",
                     children: [
                         {
                             child: "Verbal Communication"
@@ -55,16 +59,4 @@ app.controller('skillzController', ['$scope', function($scope){
                     ]
                 }
     ];
-
 }]);
-/*
-app.directive("cenas", function () {
-    return {
-        restrict: 'A',
-        link: function ($scope, element, attrs) {
-            element.bind('mouseenter', function() {
-                console.log("CENAS");
-            });
-        }
-    };
-});*/
