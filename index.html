@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="styles/main.css" />
 
     </head>
-    <body >
+    <body>
         <div class="beautyLanding"></div>
         <div class="landing-on-earth">
             <div class="greetingsTraveller">
@@ -51,21 +51,60 @@
         <!--<social></social>-->
 
         <section class="skillzSection" ng-controller="skillzController">
-            <div class="fontTitle">Skillz</div>
-
-                <div class="grid" ng-repeat="skill in skillz">
-                 
-                        <figure class="skillList">
-                            <img src="assets/{{skill.skillClass}}" alt="Cenas" class="backgroundSkill"/>
-                            <figuretag>
-                                <h2><span>{{skill.father}}</span></h2>
-                                <div class="skillContainer">
-                                    <p ng-repeat="cenas in skill.children">{{cenas.child}}</p>
-                                </div>
-                            </figuretag>
-                        </figure>
+            <div class="fontTitle">Skills</div>
+                <div class="skillPanelContainer">
+                    <li ng-repeat="skill in skillz">
+                        <div class="grid awty" data-awty="skillAnim">
+                            <div class="skillDescription">{{skill.description}}</div>
+                            <figure class="skillList">
+                                <img src="assets/{{skill.skillClass}}" alt="Cenas" class="backgroundSkill"/>
+                                <figuretag>
+                                    <h2><span>{{skill.father}}</span></h2>
+                                    <div class="skillContainer">
+                                        <p ng-repeat="cenas in skill.children">{{cenas.child}}</p>
+                                    </div>
+                                </figuretag>
+                            </figure>
+                        </div>
+                    </li>
                 </div>
+        </section>
 
+        <section class="interestsSection" ng-controller="interestsController">
+            <div class="fontTitle">Interests</div>
+            <div class="outboundField">
+                <div class="outboundLines center">
+                    <div class="middleLine"></div>
+                    <div class="circleMid center"></div>
+                    <div class="halfLeft"></div>
+                    <div class="halfRight"></div>
+                    <div class="ball center"></div>
+                    <div class="person">
+                        <div class="personHead">
+                            <div class="rightEye"></div>
+                            <div class="leftEye"></div>
+                            <div class="mouth"></div>
+                        </div>
+                        <div class="personBody center"></div>
+                        <div class="rightArm"></div>
+                        <div class="leftArm"></div>
+                        <div class="leftLeg"></div>
+                        <div class="rightLeg animRight"></div>
+                    </div>
+                    <div class="otherPerson">
+                        <div class="personHead">
+                            <div class="rightEye"></div>
+                            <div class="leftEye"></div>
+                            <div class="mouth"></div>
+                        </div>
+                        <div class="personBody center"></div>
+                        <div class="rightArm"></div>
+                        <div class="leftArm"></div>
+                        <div class="leftLeg animLeft"></div>
+                        <div class="rightLeg"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <div id="footer" class="footer">
@@ -73,10 +112,11 @@
         </div>
 
         <script src="/scripts/angular.min.js"></script>
+        <script src="bower_components/awty/dist/awty.min.js"></script>
         <script src="src/app/app.js"></script>
         <script src="src/app/skillz/skillz.js"></script>
         <script src="src/app/social/social.js"></script>
-
+        <script src="src/app/interests/interests.js"></script>
     </body>
 
 </html>

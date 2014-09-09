@@ -4,7 +4,7 @@ app.directive("social", function () {
     return {
         restrict: 'A',
         //templateUrl: 'src/app/social/social.html',
-        link: function ($scope, element) {
+        link: function ($scope, element, attrs) {
             element.bind('mouseenter', function() {
                 if($scope.social.animation){
                     angular.element(document.getElementById("facebook").getElementsByClassName("descriptionContainer")).addClass('fixedFace');
@@ -14,3 +14,5 @@ app.directive("social", function () {
         }
     };
 });
+
+new Awty().init();
