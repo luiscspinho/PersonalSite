@@ -1,3 +1,6 @@
+@import "../src/app/interests/interests.scss";
+@import "../src/app/skillz/skills.scss";
+
 * {
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     -webkit-box-sizing: border-box;
@@ -280,575 +283,131 @@
     transform: translateX(1%);
 }
 
-//SKILLZ
-
-/* Common style */
-.skillzSection {
-    display: inline-block;
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-    margin-top: 100px;
-    list-style: none;
+.footer {
+    position: absolute;
+    height: 150px;
+    background-color: grey;
 }
 
-.grid {
-    overflow: hidden;
-    margin: 0;
-    padding: 3em 0 0 0;
-    text-align: center;
-    opacity: 0;
-}
-
-.skillPanelContainer {
-    
-}
-
-.skillPanelContainer li:nth-child(even) {
-        margin-top: 50px;
-
-    .skillDescription {
-        float: right;
-        width: 50%;
-        font-size: 20px;
-    }
-    .skillList {
-        float: left;
-    }
-}
-
-.skillPanelContainer li:nth-child(odd) {
-    margin-top: 50px;
-    .skillDescription {
-        float: left;
-        width: 50%;
-        font-size: 20px;
-    }
-    .skillList {
-        float: right;
-    }
-}
-
-.grid figure {
+.camping {
     position: relative;
-    z-index: 1;
-    overflow: hidden;
-    margin: -0.135em;
-    width: 300px;
-    height: 300px;
-    //background: #3085a3;
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-1, #FFFFFF), color-stop(0.4, #000000));
-    text-align: center;
-    cursor: pointer;
-    float: left;
-}
+    width: 900px;
+    top: 90%;
+    left: 25%;
 
-.grid figure img {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
+    .clouds {
+        padding: 100px 0;
+        background: #c9dbe9;
+        background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+        background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+        background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 
-.grid figure figuretag {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+        .cloud {
+            width: 200px; height: 60px;
+            background: #fff;
+            
+            border-radius: 200px;
+            -moz-border-radius: 200px;
+            -webkit-border-radius: 200px;
+            
+            position: relative; 
+        }
 
-    padding: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
+        .cloud:before, .cloud:after {
+            content: '';
+            position: absolute; 
+            background: #fff;
+            width: 100px; height: 80px;
+            position: absolute; top: -15px; left: 10px;
+            
+            border-radius: 100px;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+        }
 
-.grid figure h2,
-.grid figure p {
-    margin: 0;
-}
-
-.grid figure p {
-    letter-spacing: 1px;
-    font-size: 68.5%;
-}
- //END
-.skillList {
-    background: -webkit-linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
-    background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
-}
-
-.skillList img {
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
-}
-
-.skillList:hover img {
-    opacity: 0.4;
-}
-
-
-.skillList:hover figuretag::after {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-
-.skillList figuretag {
-    padding: 3em;
-    text-align: left;
-}
-
-.skillContainer {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.skillList p {
-    right: 60px;
-    bottom: 60px;
-    left: 60px;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,-10px,0);
-    transform: translate3d(0,-10px,0);
-}
-
-.skillList:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,70px,0);
-}
-
-
-.skillAnim {
-    animation: skillAnimKeyframe 1s linear;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-}
-
-@keyframes skillAnimKeyframe {
-  100% {
-    opacity: 1;
-  }
-}
-
-
-//Interests
-.interestsSection {
-    display: inline-block;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 100px;
-    text-align: center;
-}
-
-.outboundField {
-    margin-top: 200px;
-    width: 500px;
-    height: 250px;
-    background-color: black;
-    position: relative;
-
-    .outboundLines {
-        width: 490px;
-        height: 240px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        margin: auto;
+        .cloud:after {
+            width: 120px; height: 120px;
+            top: -55px; left: auto; right: 15px;
+        }
     }
 
-    .middleLine {
-        height: 100%;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        margin-left: 20px;
-        margin: 0 auto;
-    }
-
-    .circleMid {
-        background-color: black;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border-style: solid;
-        border-color: white;
-        z-index: -1;
-    }
-
-    .halfLeft {
-        height: 90px;
-        width: 45px;
-        border-radius: 0 90px 90px 0;
-        border-style: solid;
-        border-color: white;
-        background-color: black;
-        top: 50%;
-        transform: translateY(-50%);
+    .tent {
         position: absolute;
-    }
-
-    .halfRight {
-        height: 90px;
-        width: 45px;
-        border-radius: 90px 0 0 90px;
-        border-style: solid;
-        border-color: white;
-        background-color: black;
-        top: 50%;
-        transform: translateY(-50%);
-        position: absolute;
+        width: 300px;
+        height: 300px;
         right: 0;
-    }
 
-    .ball {
-        display: block;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: white;
-        box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
-        position: absolute;
-        left: 18%;
-        -webkit-animation: bounce 6s 1 forwards infinite;
-        -moz-animation: bounce 6s 1 forwards infinite;
-        -ms-animation: bounce 6s 1 forwards infinite;
-        animation: bounce 6s 1 forwards infinite;
-
-    }
-}
-
-@-webkit-keyframes bounce {
-    0% {
-        top: 160px;  
-        -webkit-animation-timing-function: ease-in;
-    }
-    25% {
-        top: 160px;
-        left: 250px;
-        -webkit-animation-timing-function: ease-out;
-    }
-    50% {
-        top: 160px;
-        left: 398px;
-        -webkit-animation-timing-function: ease-in;
-    }
-    75% {
-        top: 80px;
-        left: 250px;
-        -webkit-animation-timing-function: ease-out;
-    }
-    100% {
-        top: 160px;  
-        -webkit-animation-timing-function: ease-in;
-    }
-}
-
-
-.person {
-    position: absolute;
-    top: 80px;
-    left: 4%;
-    width: 80px;
-    height: 200px;
-
-    .personHead {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border-color: white;
-        border-style: solid;
-        background-color: black; 
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-
-        .leftEye {
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            border-color: white;
-            border-style: solid;
-            background-color: black;
-            top: 20%;
-            left: 10%;
+        .triangle {
             position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid blue;
+            //z-index: 1;
         }
 
-        .rightEye {
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            border-color: white;
-            border-style: solid;
-            background-color: black;
-            top: 20%;
-            left: 67%;
+        .triangleBack {
             position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+            margin-left: 150px;
         }
 
-        .mouth {
-            height: 0px;
-            width: 0px;
-            background-color: black;
-            border-style: solid;
-            border-color: white;
-            margin-left: 20px;
-            margin: 13px auto;
+        .frontEntrance {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 100px solid black;
+            left: 15%;
         }
-    }
 
-    .personBody {
-        height: 40px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 50px;
-    }
+        .connector1 {
+            position: absolute;
+            margin-left: 50px;
+            width: 150px;
+            height: 100px;
+            background-color: red;    
+            z-index: -1;      
+        
+            .bend1 {
+                position: absolute;
+                width: 149px;
+                height: 25px;
+                background-color: white;
+                border-radius: 50%;
+                margin-top: -10%;
+            }
+        }
 
-    .rightArm {
-        position: absolute;
-        height: 15px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 32px;
-        left: 30px;
-        transform: rotate(-45deg);
-    }
-
-    .leftArm {
-        position: absolute;
-        height: 15px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 32px;
-        right: 30px;
-        transform: rotate(45deg);
-    }
-
-    .leftLeg {
-        position: absolute;
-        height: 25px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 65px;
-        left: 27px;
-        transform: rotate(45deg);
-    }
-
-    .rightLeg {
-        position: absolute;
-        height: 25px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 65px;
-        right: 27px;
-        transform: rotate(-45deg);
-    }
-
-    .animRight {
-        -webkit-animation: shoot 6s 1 forwards infinite;
-        -moz-animation: shoot 6s 1 forwards infinite;
-        -ms-animation: shoot 6s 1 forwards infinite;
-        animation: shoot 6s 1 forwards infinite;
     }
 }
 
-
-.otherPerson {
-    position: absolute;
-    top: 80px;
-    left: 80%;
-    width: 80px;
-    height: 200px;
-
-    .personHead {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border-color: white;
-        border-style: solid;
-        background-color: black; 
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-
-        .leftEye {
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            border-color: white;
-            border-style: solid;
-            background-color: black;
-            top: 20%;
-            left: 10%;
-            position: absolute;
-        }
-
-        .rightEye {
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            border-color: white;
-            border-style: solid;
-            background-color: black;
-            top: 20%;
-            left: 67%;
-            position: absolute;
-        }
-
-        .mouth {
-            height: 0px;
-            width: 0px;
-            background-color: black;
-            border-style: solid;
-            border-color: white;
-            margin-left: 20px;
-            margin: 13px auto;
-        }
-    }
-
-    .personBody {
-        height: 40px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 50px;
-    }
-
-    .rightArm {
-        position: absolute;
-        height: 15px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 32px;
-        left: 30px;
-        transform: rotate(-45deg);
-    }
-
-    .leftArm {
-        position: absolute;
-        height: 15px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 32px;
-        right: 30px;
-        transform: rotate(45deg);
-    }
-
-    .leftLeg {
-        position: absolute;
-        height: 25px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 65px;
-        left: 27px;
-        transform: rotate(45deg);
-
-    }
-
-    .animLeft {
-        -webkit-animation: shootLeft 6s 1 forwards infinite;
-        -moz-animation: shootLeft 6s 1 forwards infinite;
-        -ms-animation: shootLeft 6s 1 forwards infinite;
-        animation: shootLeft 6s 1 forwards infinite;
-    }
-
-    .rightLeg {
-        position: absolute;
-        height: 25px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 65px;
-        right: 27px;
-        transform: rotate(-45deg);
-    }
+.c1 {
+    -webkit-animation: moveclouds 10s linear infinite;
+    -moz-animation: moveclouds 10s linear infinite;
+    -o-animation: moveclouds 10s linear infinite;
 }
 
-@-webkit-keyframes shoot {
-    0% {
-        transform: rotate(-45deg);
-        -webkit-animation-timing-function: ease-in;
-    }
-    15% {
-        transform: rotate(-90deg);
-        top: 55px;
-        -webkit-animation-timing-function: ease-out;
-    }
-    20% {
-        -webkit-animation-timing-function: ease-in;
-    }
-    25% {
-        position: absolute;
-        height: 25px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 65px;
-        right: 27px;
-        transform: rotate(-45deg);
-    }
+.c2 {
+    left: -200px;
+    -webkit-animation: moveclouds 10s linear infinite;
+    -moz-animation: moveclouds 10s linear infinite;
+    -o-animation: moveclouds 10s linear infinite;
 }
 
-
-@-webkit-keyframes shootLeft {
-    45% {
-        top: 65px;
-        left: 27px;
-        transform: rotate(45deg);
-        -webkit-animation-timing-function: ease-in;
-    }
-    70% {
-        transform: rotate(90deg);
-        top: 55px;
-        left: 22px;
-        -webkit-animation-timing-function: ease-out;
-    }
-    75% {
-        left: 27px;
-        -webkit-animation-timing-function: ease-in;
-    }
-    80% {
-        position: absolute;
-        height: 25px;
-        width: 0px;
-        background-color: black;
-        border-style: solid;
-        border-color: white;
-        top: 65px;
-        left: 27px;
-        transform: rotate(45deg);
-    }
+@-webkit-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
 }
 
 .center {
@@ -857,11 +416,6 @@ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-1,
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-}
-
-.footer {
-    height: 150px;
-    background-color: grey;
 }
 
 @media screen and (max-width: 1500px) {

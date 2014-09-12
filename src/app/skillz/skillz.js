@@ -47,7 +47,12 @@ app.controller('skillzController', ['$scope', function($scope){
                 {
                     father: "Scrum",
                     description: "I've always worked with scrum. I'm a Certified ScrumMaster® (CSM) by Scrum Alliance and worked as a scrum master for roughly 1 year for a team of 6 people.",
-                    skillClass: "scrum.JPG"
+                    skillClass: "scrum.JPG",
+                    children: [
+                        {
+                            child: "ScrumMaster"
+                        }
+                    ]
                 },
                 {
                     father: "Soft Skills",

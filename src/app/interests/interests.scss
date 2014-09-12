@@ -1,0 +1,779 @@
+
+//Interests
+.interestsSection {
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.outboundField {
+    margin-top: 100px;
+    width: 500px;
+    height: 250px;
+    background-color: #526F35;
+    position: relative;
+
+    .outboundLines {
+        width: 490px;
+        height: 240px;
+        background-color: #526F35;
+        border-style: solid;
+        border-color: white;
+        margin: auto;
+    }
+
+    .middleLine {
+        height: 100%;
+        width: 0px;
+        background-color: #526F35;
+        border-style: solid;
+        border-color: white;
+        border-radius: 1px;
+        margin-left: 20px;
+        margin: 0 auto;
+    }
+
+    .circleMid {
+        background-color: #526F35;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: white;
+        z-index: -1;
+    }
+
+    .halfLeft {
+        height: 45px;
+        width: 22.5px;
+        border-radius: 0 90px 90px 0;
+        border-style: solid;
+        border-color: white;
+        background-color: #526F35;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 8%;
+    }
+
+    .halfLeftQ {
+        height: 90px;
+        width: 45px;
+        border-style: solid;
+        border-color: white;
+        background-color: #526F35;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 0%;
+    }
+
+    .halfLeftQS {
+        height: 50px;
+        width: 20px;
+        border-style: solid;
+        border-color: white;
+        background-color: #526F35;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 0%;
+    }
+
+    .leftPen {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: white;
+        background-color: #526F35;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 6%;
+    }
+
+    .halfRight {
+        height: 45px;
+        width: 22.5px;
+        border-radius: 90px 0 0 90px;
+        border-style: solid;
+        border-color: white;
+        background-color: #526F35;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 8%;
+    }
+
+    .halfRightQ {
+        height: 90px;
+        width: 45px;
+        border-style: solid;
+        border-color: white;
+        background-color: #526F35;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 0%;
+    }
+
+    .halfRightQS {
+        height: 50px;
+        width: 20px;
+        border-style: solid;
+        border-color: white;
+        background-color: #526F35;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 0%;
+    }
+
+    .rightPen {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: white;
+        background-color: #526F35;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 6%;
+    }
+
+
+    .ball {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.animTrue .ball {
+    -webkit-animation: move 10s 1 forwards infinite;
+    -moz-animation: move 10s 1 forwards infinite;
+    -ms-animation: move 10s 1 forwards infinite;
+    animation: move 10s 1 forwards infinite;
+
+}
+@-webkit-keyframes move {
+    10% {
+        top: 140px;
+        left: 65%; 
+    }
+
+    25% {
+        top: 55px; 
+        left: 65%;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    35% {
+        top: 60px;
+        left: 74%;  
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    50% {
+        top: 160px;
+        left: 35%; 
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    65% {
+        top: 100px; 
+        left: 10%;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    70% {
+        top: 140px; 
+        left: 0%;
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    100% {
+        top: 140px; 
+        left: 0%;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+}
+
+//TEAM B
+
+.animTrue .animBFW {
+    -webkit-animation: moveBFW 10s 1 forwards infinite;
+    -oz-animation: moveBFW 10s 1 forwards infinite;
+    -ms-animation: moveBFW 10s 1 forwards infinite;
+    animation: moveBFW 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveBFW {
+    0% {
+
+    }
+    25% {
+        top: 45%; left: 30%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+
+    100% {
+        top: 35%; left: 10%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+}
+
+.animTrue .animBDC {
+    -webkit-animation: moveBDC 10s 1 forwards infinite;
+    -moz-animation: moveBDC 10s 1 forwards infinite;
+    -ms-animation: moveBDC 10s 1 forwards infinite;
+    animation: moveBDC 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveBDC {
+    0% {
+    }
+    40% {
+       top: 50px;
+       left: 75%;  
+    }
+    100% {
+        top: 50px;
+        left: 75%; 
+    }
+
+}
+
+.animTrue .animBMF {
+    -webkit-animation: moveBMF 10s 1 forwards infinite;
+    -moz-animation: moveBMF 10s 1 forwards infinite;
+    -ms-animation: moveBMF 10s 1 forwards infinite;
+    animation: moveBMF 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveBMF {
+    0% {
+        -webkit-animation-timing-function: ease-in;
+    }
+    50% {
+        top: 160px;
+        left: 35%; 
+    }
+    100% {
+        top: 160px;
+        left: 30%; 
+    }
+}
+
+.animTrue .animBAMF {
+    -webkit-animation: moveBAMF 10s 1 forwards infinite;
+    -moz-animation: moveBAMF 10s 1 forwards infinite;
+    -ms-animation: moveBAMF 10s 1 forwards infinite;
+    animation: moveBAMF 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveBAMF {
+    0% {
+        -webkit-animation-timing-function: ease-in;
+    }
+    22% {
+        top: 28px; 
+        left: 60%;
+    }
+    100% {
+        top: 28px; 
+        left: 50%;
+    }
+}
+
+.animTrue .animAGK {
+    -webkit-animation: moveAGK 10s 1 forwards infinite;
+    -moz-animation: moveAGK 10s 1 forwards infinite;
+    -ms-animation: moveAGK 10s 1 forwards infinite;
+    animation: moveAGK 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveAGK {
+    0% {
+        -webkit-animation-timing-function: ease-in;
+    }
+    60% {
+      top: 100px;
+      left: 1%;  
+    }
+    70% {
+        top: 80px;
+        left: 1%;
+    }
+    100% {
+        top: 80px;
+        left: 1%;
+    }
+}
+
+//TEAM A
+
+.animTrue .animAAMF {
+    -webkit-animation: moveAAMF 10s 1 forwards infinite;
+    -moz-animation: moveAAMF 10s 1 forwards infinite;
+    -ms-animation: moveAAMF 10s 1 forwards infinite;
+    animation: moveAAMF 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveAAMF {
+    0% {
+        //top: 160px;  
+        -webkit-animation-timing-function: ease-in;
+    }
+    25% {
+        top: 140px;
+        left: 55%; 
+    }
+    100% {
+        top: 80px;
+        left: 65%; 
+
+    }
+}
+
+.animTrue .animADE {
+    -webkit-animation: moveADE 10s 1 forwards infinite;
+    -moz-animation: moveADE 10s 1 forwards infinite;
+    -ms-animation: moveADE 10s 1 forwards infinite;
+    animation: moveADE 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveADE {
+    0% {
+        //top: 160px;  
+        -webkit-animation-timing-function: ease-in;
+    }
+    25% {
+        top: 160px;
+        left: 45%; 
+    }
+    100% {
+        top: 160px;
+        left: 35%; 
+
+    }
+}
+
+.animTrue .animADD {
+    -webkit-animation: moveADD 10s 1 forwards infinite;
+    -moz-animation: moveADD 10s 1 forwards infinite;
+    -ms-animation: moveADD 10s 1 forwards infinite;
+    animation: moveADD 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveADD {
+    0% {
+        -webkit-animation-timing-function: ease-in;
+    }
+    35% {
+        top: 20px;
+        left: 35%;
+    }
+    100% {
+        top: 20px;
+        left: 45%; 
+
+    }
+}
+
+.animTrue .animADC {
+    -webkit-animation: moveADC 10s 1 forwards infinite;
+    -moz-animation: moveADC 10s 1 forwards infinite;
+    -ms-animation: moveADC 10s 1 forwards infinite;
+    animation: moveADC 10s 1 forwards infinite;
+}
+
+@-webkit-keyframes moveADC {
+    0% {
+        -webkit-animation-timing-function: ease-in;
+    }
+    50% {
+        top: 100px;
+        left: 15%;   
+    }
+    60% {
+        top: 80px;
+        left: 22%;
+    }
+    100% {
+        top: 80px;
+        left: 15%;
+    }
+}
+.playerTeamA {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: #bf0000;
+    color: white;
+}
+
+.playerTeamB {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background: #0040ff;
+    color: white;
+}
+
+.teamAGK {
+    top: 100px;
+    left: 1%;
+}
+
+.teamADC {
+    top: 100px;
+    left: 15%;
+}
+
+.teamADD {
+    top: 20px;
+    left: 15%;
+}
+
+.teamADE {
+    top: 180px;
+    left: 15%;
+}
+
+.teamAMF {
+    top: 100px;
+    left: 35%;
+}
+
+.teamBGK {
+    top: 100px;
+    left: 94%; 
+}
+
+.teamBDC {
+    top: 100px;
+    left: 84%; 
+}
+
+.teamBMF {
+    top: 150px;
+    left: 65%; 
+}
+
+.teamBAMF {
+    top: 50px; 
+    left: 65%;
+}
+
+.teamBFW {
+    position: absolute;
+    top: 45%; left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+
+@font-face {
+    font-family:"JustAnotherHandRegular";
+    src: url("../assets/ColorsOfAutumn.ttf");
+}
+
+.music {
+    position: relative;
+    margin-top: -130px;
+    //float: right;
+    margin-left: 70%;
+
+    .cassetteContainer {
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        border-radius: 12px;
+        background-color: grey;
+
+        .topContainer {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            background-color: white;
+            opacity: 0.3;
+
+            .screwLeft {
+                margin-left: 2%;
+                top: 50%;
+                -webkit-transform: translate(0,-50%);
+                -ms-transform: translate(0,-50%);
+                transform: translate(0,-50%);
+            }
+
+            .screwRight {
+                margin-left: 94%;
+                margin-top: -2%;
+            }
+        }
+
+        .midContainer {
+            
+            .leftGear {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: grey;            
+                border: 5px solid white;
+                top: 50%;
+                transform: translate(0, -50%);
+                left: 25%;
+            }
+
+
+            .reelBlack {
+                position: absolute;
+                width: 240px;
+                height: 240px;
+                border-radius: 50%;
+                background-color: black;            
+                border: 5px solid white;
+                top: 50%;
+                transform: translate(0, -50%);
+                left: 8%;
+            }
+
+            .label {
+                position: absolute;
+                top: 65%;
+                left: 11%;
+                width: 78.5%;
+                height: 16%;
+                background-color: white;
+                border-radius: 5px;
+                text-indent: 0.25em;
+                font: normal 36px JustAnotherHandRegular, helvetica, sans-serif;
+                line-height: 140%;
+                color: #111;
+                text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+                box-shadow: 1px 1px 0px rgba(0,0,0,0.05);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                z-index: 6; 
+                opacity: 0.8;
+            }
+
+            .topConnector {
+                position: absolute;
+                width: 180px;
+                height: 2px;
+                background-color: black;
+                left: 22%;
+                top: 17%;
+                transform: rotate(24deg) translate(40%, 60%);
+            }
+
+            .bottomConnector {
+                position: absolute;
+                width: 180px;
+                height: 2px;
+                background-color: black;
+                left: 22%;
+                top: 81%;
+                transform: rotate(-24deg) translate(40%, 60%);
+            }
+
+            .reelBlackRight {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: black;            
+                border: 5px solid white;
+                top: 50%;
+                transform: translate(0, -50%);
+                right: 22%;
+            }
+
+            .reel-maskRight {
+                position: absolute;
+                width: 240px;
+                height: 240px;
+                border-radius: 50%;
+                background-color: white;            
+                border: 5px solid white;
+                top: 50%;
+                transform: translate(0, -50%);
+                right: 0;
+                left: 43.7%;
+            }
+
+            .reel-maskLeft {
+                position: absolute;
+                width: 240px;
+                height: 240px;
+                border-radius: 50%;
+                background-color: white;            
+                border: 5px solid white;
+                top: 50%;
+                transform: translate(0, -50%);
+                left: 8%;
+            }
+
+            .gearPin1 {
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                transform: rotate(39deg) translate(60%);
+            }
+
+            .gearPin2 {
+                width: 10px;
+                height: 10px;
+                float: right;
+                background-color: white;
+                transform: rotate(39deg) translate(-70%, -19%);
+            }
+
+            .gearPin3 {
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                transform: rotate(39deg) translate(300%, 250%);
+            }
+
+            .gearPin4 {
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                transform: rotate(39deg) translate(520%, -100%);
+            }
+
+            .rightGear {
+                position: absolute;
+                right: 25%;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: grey;            
+                border: 5px solid white;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+
+        .bottomContainer {
+           position: absolute;
+           width: 100%;
+           height: 50px;
+           background-color: white;
+           opacity: 0.3; 
+           bottom: 0px;
+
+           .screwBLeft {
+                margin-top: 5%;
+                margin-left: 1%;
+           }
+
+           .screwBRight {
+                margin-top: -3%;
+                margin-left: 96%;
+           }
+
+           .railMiddle {     
+                opacity: 0.5;
+                border-bottom: 50px solid grey;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                height: 0;
+                width: 300px;
+           }
+
+           .holeLeft {
+               position: relative;
+               opacity: 1;
+               width: 15px;
+               height: 15px;
+               border-radius: 50%;
+               background-color: white; 
+               margin-top: 30px;
+               float: left;
+           }
+
+           .holeRight {
+               position: relative;
+               opacity: 1;
+               width: 15px;
+               height: 15px;
+               border-radius: 50%;
+               background-color: white; 
+               margin-top: 28px;
+               float: right;
+           }
+
+           .screwMiddle {
+                opacity: 1;
+                top: 10px;
+           }
+
+           .tapePad {
+                position: relative;
+                width: 70px;
+                height: 20px;
+                background-color: black;
+                bottom: 0;
+                top: 80%;   
+
+                .padContainer {
+                    width: 40px;
+                    height: 10px;
+                    background-color: white;
+                    bottom: 0;
+                    top: 80%;
+                }
+           }
+
+        }
+    }
+
+}
+
+.screwCross {
+    .line1 {
+        height: 7px;
+        width: 1px;
+        background-color: white;
+    }
+
+    .line2 {
+        height: 1px;
+        width: 7px;
+        background-color: white;
+    }
+}
+
+.screw {
+    position: relative;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
