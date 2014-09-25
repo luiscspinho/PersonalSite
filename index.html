@@ -5,24 +5,32 @@
         <title>Luis Pinho - Awesomeness Inside</title>
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/interests.scss" />
-
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div class="beautyLanding"></div>
-        <div class="landing-on-earth">
-            <div class="greetingsTraveller">
-                Greetings Traveller!
+        <div class="beautyLanding">
+            <div class="landingContainer center" scroll>
+                <div class="landingMe center"></div>
+                <div class="landingInfo center">Luís Pinho</div>
+            </div>
+            <div class="arrowDownContainer">
+                <div class="arrowLeft center"></div>
+                <div class="arrowRight center"></div>
             </div>
         </div>
+        </div>
 
-        <section class="secondStage" ng-controller="socialController" >
+        <section class="secondStage" ng-controller="socialController" scroll>
             <div class="bossContainer">
                 <div class="bossInfo">
                     <div class="bossDescription">
                         <div class="aboutMe fontTitle">About Me</div><p/>
                         {{aboutMeInfo}}
                     </div>
-                    <div class="bossImage circular"></div>
+                    <div class="imageFixed">
+                        <div class="landingMeFixed"></div>
+                        <div class="landingInfoFixed">Luís Pinho</div>
+                    </div>
                     <div class="bossDesc">
                         <div class="bossDetails fontTitle">Info</div><br>
                         <strong>Name: </strong>
@@ -172,6 +180,7 @@
                     <div class="connector1"><div class="bend1"></div></div>
                     <div class="triangleBack"></div>
                 </div>
+                <div class="fire"></div>
             </div>
 
         </section>

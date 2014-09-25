@@ -799,43 +799,101 @@
   -moz-box-sizing: border-box;
        box-sizing: border-box; }
 
-.landing-on-earth {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
 .beautyLanding {
-  background-image: url(/assets/back2.jpg);
-  /* For WebKit*/
-  /* Mozilla*/
-  /* Opera*/
-  background-size: cover;
-  /* Generic*/
-  background-position: right;
-  background-repeat: no-repeat;
+  width: 100%;
   height: 100%;
-  opacity: 0.6;
-  -webkit-filter: blur(1px);
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); }
-
-.greetingsTraveller {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  line-height: 180%;
-  font-size: 240%;
-  height: 4% auto;
-  background-color: #ffffff;
-  opacity: 0.8; }
+  display: inline-block;
+  position: relative; }
+  .beautyLanding .landingContainer {
+    position: fixed;
+    width: 300px;
+    height: 300px; }
+    .beautyLanding .landingContainer .landingMe {
+      background-image: url(/assets/eu.png);
+      background-repeat: no-repeat;
+      height: 170px;
+      width: 50px;
+      background-position: center;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 30%;
+      -webkit-animation: blink 6s linear infinite;
+      -moz-animation: blink 6s linear infinite;
+      -o-animation: blink 6s linear infinite; }
+    .beautyLanding .landingContainer .landingInfo {
+      position: absolute;
+      display: block;
+      font-family: 'Droid Sans', sans-serif;
+      font-size: 40px;
+      text-align: left;
+      left: 210px; }
+  .beautyLanding .arrowDownContainer {
+    height: 80px;
+    width: 110px;
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    -webkit-animation: appearArrow 3s linear;
+    -moz-animation: appearArrow 3s linear;
+    -o-animation: appearArrow 3s linear; }
+  .beautyLanding .arrowLeft {
+    position: absolute;
+    background: white;
+    width: 40px;
+    height: 10px;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+        transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    left: 20px; }
+  .beautyLanding .arrowRight {
+    position: absolute;
+    background: white;
+    width: 40px;
+    height: 10px;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(-40deg);
+        transform: rotate(-40deg);
+    -moz-transform: rotate(40deg);
+    left: 45px; }
+  .beautyLanding .fixedMe {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    opacity: 0; }
+
+@-webkit-keyframes appearArrow {
+  0% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    background-image: url(/assets/eu.png); }
+
+  28% {
+    background-image: url(/assets/eu.png); }
+
+  30% {
+    background-image: url(/assets/euBlink.png); }
+
+  32% {
+    background-image: url(/assets/eu.png); }
+
+  100% {
+    background-image: url(/assets/eu.png); } }
 
 .bossContainer {
   margin-right: auto;
@@ -863,15 +921,44 @@
       -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
       -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
     .bossContainer .bossInfo .bossImage {
-      background-image: url(/assets/back6.jpg);
-      background-size: 160%;
-      background-position: 55% 26%;
       float: left;
       -webkit-filter: grayscale(1);
       filter: grayscale(1);
       filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
       margin-left: auto;
+      margin-right: auto;
+      opacity: 0; }
+    .bossContainer .bossInfo .imageFixed {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      opacity: 1;
+      float: left;
+      margin-left: 30px;
       margin-right: auto; }
+      .bossContainer .bossInfo .imageFixed .landingMeFixed {
+        background-image: url(/assets/eu.png);
+        background-repeat: no-repeat;
+        height: 170px;
+        width: 50px;
+        background-position: center;
+        position: absolute;
+        top: 30%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        -webkit-animation: blink 6s linear infinite;
+        -moz-animation: blink 6s linear infinite;
+        -o-animation: blink 6s linear infinite; }
+      .bossContainer .bossInfo .imageFixed .landingInfoFixed {
+        position: absolute;
+        display: block;
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 40px;
+        text-align: left;
+        top: 43px; }
+    .bossContainer .bossInfo .landingMeOpa {
+      opacity: 1; }
 
 .fontTitle {
   font-size: 30px;
@@ -1121,15 +1208,15 @@
         margin-top: -10%; }
 
 .c1 {
-  -webkit-animation: moveclouds 10s linear infinite;
-  -moz-animation: moveclouds 10s linear infinite;
-  -o-animation: moveclouds 10s linear infinite; }
+  -webkit-animation: moveclouds 12s linear infinite;
+  -moz-animation: moveclouds 12s linear infinite;
+  -o-animation: moveclouds 12s linear infinite; }
 
 .c2 {
   left: -200px;
-  -webkit-animation: moveclouds 10s linear infinite;
-  -moz-animation: moveclouds 10s linear infinite;
-  -o-animation: moveclouds 10s linear infinite; }
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite; }
 
 @-webkit-keyframes moveclouds {
   0% {

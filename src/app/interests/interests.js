@@ -1,4 +1,4 @@
-app.controller('skillzController', ['$scope', function($scope){
+app.controller('interestsController', ['$scope', function($scope){
     
 
-);
+}]);
