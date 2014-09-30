@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="styles/interests.scss" />
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body scroll>
         <div class="beautyLanding">
-            <div class="landingContainer center" scroll>
+            <div class="landingContainer center" >
                 <div class="landingMe center"></div>
                 <div class="landingInfo center">Luís Pinho</div>
             </div>
@@ -20,7 +20,7 @@
         </div>
         </div>
 
-        <section class="secondStage" ng-controller="socialController" scroll>
+        <section class="secondStage" ng-controller="socialController" >
             <div class="bossContainer">
                 <div class="bossInfo">
                     <div class="bossDescription">
@@ -62,9 +62,9 @@
         <section class="skillzSection" ng-controller="skillzController">
             <div class="fontTitle">Skills</div>
                 <div class="skillPanelContainer">
-                    <li ng-repeat="skill in skillz">
+                    <li ng-repeat="skill in skillz" class="awty" data-awty="moveSkill">
                         <div class="grid awty" data-awty="skillAnim">
-                            <div class="skillDescription">{{skill.description}}</div>
+                            <div class="skillDescription awty" data-awty="appearDescrip">{{skill.description}}</div>
                             <figure class="skillList">
                                 <img src="assets/{{skill.skillClass}}" alt="Cenas" class="backgroundSkill"/>
                                 <figuretag>

@@ -31,8 +31,9 @@
 
     .landingContainer {
         position: fixed;
-        width: 300px;
+        width: 190px;
         height: 300px;
+        margin-left: -1.9%;
 
         .landingMe {
             background-image:url(/assets/eu.png);
@@ -43,7 +44,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: 30%;
+            left: 29.5%;
 
             -webkit-animation: blink 6s linear infinite;
             -moz-animation: blink 6s linear infinite;
@@ -57,7 +58,7 @@
             font-family: 'Droid Sans', sans-serif;
             font-size: 40px;
             text-align: left;
-            left: 210px;
+            left: 90%;
         }
     }
 
@@ -70,9 +71,16 @@
         bottom: 0;
         right: 0;
         border-radius: 20px;
-        -webkit-animation: appearArrow 3s linear;
-        -moz-animation: appearArrow 3s linear;
-        -o-animation: appearArrow 3s linear;
+        -webkit-animation: appearArrow 1s linear;
+        -moz-animation: appearArrow 1s linear;
+        -o-animation: appearArrow 1s linear;
+    }
+
+    .arrowDownContainerHidden {
+        opacity: 0;
+        -webkit-animation: disappearArrow 1s linear;
+        -moz-animation: disappearArrow 1s linear;
+        -o-animation: disappearArrow 1s linear;
     }
 
     .arrowLeft {
@@ -98,10 +106,9 @@
     }
 
     .fixedMe {
-        position: relative;
+        position: fixed;
         width: 300px;
         height: 300px;
-        //margin-top: 630px;
         opacity: 0;
     }
 }
@@ -110,6 +117,12 @@
     0% {opacity: 0;}
     20% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@-webkit-keyframes disappearArrow {
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 @-webkit-keyframes blink {
@@ -140,7 +153,7 @@
         .bossDesc {
             float: left;
             width: 20%;
-            margin-left: 20px;
+            margin-left: 22%;
         }
 
         .circular {
@@ -156,22 +169,20 @@
 
         .bossImage {
             float: left;
-            -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
             margin-left: auto;
             margin-right: auto;
             opacity: 0;
         }
         
         .imageFixed {
-            position: relative;
-            width: 300px;
+            position: absolute;
+            width: 190px;
             height: 300px;
-            opacity: 1;
+            opacity: 0;
             float: left;
-            margin-left: 30px;
-            margin-right: auto;
+            margin-left: 34.5%;
+            margin-top: -3px;
+            display: block;
 
             .landingMeFixed {
                 background-image:url(/assets/eu.png);
@@ -194,7 +205,8 @@
                 font-family: 'Droid Sans', sans-serif;
                 font-size: 40px;
                 text-align: left;
-                top: 43px;
+                top: 14%;
+                left: 31.4%;
             }
         }
 
@@ -535,4 +547,238 @@
     .skillzSection {
         display: none;
     }
+}
+
+
+//SKILLZ
+
+/* Common style */
+.skillzSection {
+    display: inline-block;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 100px;
+    list-style: none;
+}
+
+.grid {
+    position: relative;
+    margin: 0;
+    padding: 3em 0 0 0;
+    text-align: center;
+    opacity: 1;
+    height: 350px;
+}
+
+.skillPanelContainer {
+    
+}
+
+.skillPanelContainer li:nth-child(even) {
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    .skillDescription {
+        text-align: left;
+        float: right;
+        width: 50%;
+        font-size: 20px;
+        margin-top: 10%;
+        margin-right: 4%;
+        opacity: 0;
+    }
+    .skillList {
+        float: left;
+    }
+}
+
+.skillPanelContainer li:nth-child(odd) {
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+    .skillDescription {
+        text-align: left;
+        float: left;
+        width: 50%;
+        font-size: 20px;
+        margin-top: 10%;
+        margin-left: 4%;
+        opacity: 0;
+    }
+    .skillList {
+        float: right;
+    }
+}
+
+.grid figure {
+    position: absolute;
+    z-index: 1;
+    margin: -0.135em;
+    width: 300px;
+    height: 300px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-1, #FFFFFF), color-stop(0.4, #000000));
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-left: 30%;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figuretag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+ //END
+.skillList {
+    background: -webkit-linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
+}
+
+.skillList img {
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+.skillList:hover img {
+    opacity: 0.4;
+}
+
+
+.skillList:hover figuretag::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.skillList figuretag {
+    padding: 3em;
+    text-align: left;
+}
+
+.skillContainer {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skillList p {
+    right: 60px;
+    bottom: 60px;
+    left: 60px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-10px,0);
+    transform: translate3d(0,-10px,0);
+}
+
+.skillList:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,70px,0);
+}
+
+
+.skillAnim {
+    animation: skillAnimKeyframe 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.skillPanelContainer li:nth-child(even).moveSkill .appearDescrip {
+    animation: appearDescripAnim 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.skillPanelContainer li:nth-child(odd).moveSkill .appearDescrip {
+    animation: appearDescripAnim 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.skillPanelContainer li:nth-child(even).moveSkill figure {
+    animation: moveSkillFrame 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.skillPanelContainer li:nth-child(odd).moveSkill figure {
+    animation: moveSkillFrame2 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+@keyframes moveSkillFrame {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+@keyframes moveSkillFrame2 {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(60%);
+    }
+    100% {
+        transform: translateX(80%);
+    }
+}
+
+@keyframes appearDescripAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes skillAnimKeyframe {
+  100% {
+    opacity: 1;
+  }
 }

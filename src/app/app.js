@@ -5,19 +5,29 @@ app.directive("scroll", function ($window) {
         angular.element($window).bind("scroll", function() {
             var elem = document.getElementsByClassName("aboutMe");
             var elem2 = document.getElementsByClassName("landingMe");
+            var elem3 = document.getElementsByClassName("arrowDownContainer");
 
-            var a = elem[0].getBoundingClientRect().top;
-            var b = elem2[0].getBoundingClientRect().top;
+            var aboutMe = elem[0].getBoundingClientRect().top;
+            var landingMe = elem2[0].getBoundingClientRect().top;
+            var arrowDown = elem3[0].getBoundingClientRect().top;
 
 
-             if (a < b) {
+            if (landingMe > arrowDown) {
+                angular.element(document.getElementsByClassName('arrowDownContainer')).addClass('arrowDownContainerHidden');
+            } else if (angular.element(document.getElementsByClassName('arrowDownContainer'))[0].className.indexOf('arrowDownContainerHidden') != -1  ){
+                angular.element(document.getElementsByClassName('arrowDownContainer')).removeClass('arrowDownContainerHidden');
+            }
+            
+            if (aboutMe < landingMe) {
                 angular.element(document.getElementsByClassName('landingContainer')).addClass('fixedMe');
+                angular.element(document.getElementsByClassName('imageFixed')).addClass('landingMeOpa');
 
-             } else {
-                //angular.element(document.getElementsByClassName('imageFixed')).addClass('landingMeOpa');
-                //angular.element(document.getElementsByClassName('landingContainer')).removeClass('fixedMe');
-             }
-            //scope.$apply();
+            } else {
+                angular.element(document.getElementsByClassName('landingContainer')).removeClass('fixedMe');
+                angular.element(document.getElementsByClassName('imageFixed')).removeClass('landingMeOpa');
+            }
+
+            scope.$apply();
         });
     };
 });
@@ -25,7 +35,6 @@ app.directive("scroll", function ($window) {
 app.directive("social", function () {
     return {
         restrict: 'A',
-        //templateUrl: 'src/app/social/social.html',
         link: function ($scope, element, attrs) {
             element.bind('mouseenter', function() {
                 if($scope.social.animation){
