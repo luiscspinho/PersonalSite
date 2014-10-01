@@ -1,4 +1,5 @@
 
+
 //SKILLZ
 
 /* Common style */
@@ -13,11 +14,11 @@
 
 .grid {
     position: relative;
-    overflow: hidden;
     margin: 0;
     padding: 3em 0 0 0;
     text-align: center;
     opacity: 1;
+    height: 350px;
 }
 
 .skillPanelContainer {
@@ -36,6 +37,7 @@
         font-size: 20px;
         margin-top: 10%;
         margin-right: 4%;
+        opacity: 0;
     }
     .skillList {
         float: left;
@@ -55,6 +57,7 @@
         font-size: 20px;
         margin-top: 10%;
         margin-left: 4%;
+        opacity: 0;
     }
     .skillList {
         float: right;
@@ -62,9 +65,8 @@
 }
 
 .grid figure {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    overflow: hidden;
     margin: -0.135em;
     width: 300px;
     height: 300px;
@@ -72,6 +74,7 @@
     text-align: center;
     cursor: pointer;
     float: left;
+    margin-left: 30%;
 }
 
 .grid figure img {
@@ -162,6 +165,66 @@
     animation: skillAnimKeyframe 1s linear;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
+}
+
+.skillPanelContainer li:nth-child(even).moveSkill .appearDescrip {
+    animation: appearDescripAnim 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.skillPanelContainer li:nth-child(odd).moveSkill .appearDescrip {
+    animation: appearDescripAnim 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.skillPanelContainer li:nth-child(even).moveSkill figure {
+    animation: moveSkillFrame 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.skillPanelContainer li:nth-child(odd).moveSkill figure {
+    animation: moveSkillFrame2 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+@keyframes moveSkillFrame {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+@keyframes moveSkillFrame2 {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(60%);
+    }
+    100% {
+        transform: translateX(80%);
+    }
+}
+
+@keyframes appearDescripAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes skillAnimKeyframe {
