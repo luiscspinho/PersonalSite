@@ -6,29 +6,28 @@
   text-align: center; }
 
 .outboundField {
-  margin-top: 100px;
   width: 500px;
   height: 250px;
-  background-color: #526F35;
+  background-color: grey;
   position: relative; }
   .outboundField .outboundLines {
     width: 490px;
     height: 240px;
-    background-color: #526F35;
+    background-color: grey;
     border-style: solid;
     border-color: white;
     margin: auto; }
   .outboundField .middleLine {
     height: 100%;
     width: 0px;
-    background-color: #526F35;
+    background-color: grey;
     border-style: solid;
     border-color: white;
     border-radius: 1px;
     margin-left: 20px;
     margin: 0 auto; }
   .outboundField .circleMid {
-    background-color: #526F35;
+    background-color: grey;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -41,7 +40,7 @@
     border-radius: 0 90px 90px 0;
     border-style: solid;
     border-color: white;
-    background-color: #526F35;
+    background-color: grey;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -53,7 +52,7 @@
     width: 45px;
     border-style: solid;
     border-color: white;
-    background-color: #526F35;
+    background-color: grey;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -65,7 +64,7 @@
     width: 20px;
     border-style: solid;
     border-color: white;
-    background-color: #526F35;
+    background-color: grey;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -78,7 +77,7 @@
     border-radius: 50%;
     border-style: solid;
     border-color: white;
-    background-color: #526F35;
+    background-color: grey;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -91,7 +90,7 @@
     border-radius: 90px 0 0 90px;
     border-style: solid;
     border-color: white;
-    background-color: #526F35;
+    background-color: grey;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -103,7 +102,7 @@
     width: 45px;
     border-style: solid;
     border-color: white;
-    background-color: #526F35;
+    background-color: grey;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -115,7 +114,7 @@
     width: 20px;
     border-style: solid;
     border-color: white;
-    background-color: #526F35;
+    background-color: grey;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -128,7 +127,7 @@
     border-radius: 50%;
     border-style: solid;
     border-color: white;
-    background-color: #526F35;
+    background-color: grey;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -353,19 +352,19 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 3px solid white;
+  border: 2px solid white;
   border-radius: 50%;
-  background-color: #bf0000;
+  background-color: black;
   color: white; }
 
 .playerTeamB {
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 3px solid white;
+  border: 2px solid black;
   border-radius: 50%;
-  background: #0040ff;
-  color: white; }
+  background: white;
+  color: black; }
 
 .teamAGK {
   top: 100px;
@@ -415,487 +414,15 @@
   font-family: "JustAnotherHandRegular";
   src: url("../assets/ColorsOfAutumn.ttf"); }
 
-.music {
-  position: relative;
-  margin-top: -130px;
-  margin-left: 70%; }
-  .music .cassetteContainer {
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    border-radius: 12px;
-    background-color: grey; }
-    .music .cassetteContainer .topContainer {
-      position: relative;
-      width: 100%;
-      height: 30px;
-      background-color: white;
-      opacity: 0.3; }
-      .music .cassetteContainer .topContainer .screwLeft {
-        margin-left: 2%;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        transform: translate(0, -50%); }
-      .music .cassetteContainer .topContainer .screwRight {
-        margin-left: 94%;
-        margin-top: -2%; }
-    .music .cassetteContainer .midContainer .leftGear {
-      position: absolute;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background-color: grey;
-      border: 5px solid white;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-              transform: translate(0, -50%);
-      left: 25%; }
-    .music .cassetteContainer .midContainer .reelBlack {
-      position: absolute;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      background-color: black;
-      border: 5px solid white;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-              transform: translate(0, -50%);
-      left: 8%; }
-    .music .cassetteContainer .midContainer .label {
-      position: absolute;
-      top: 65%;
-      left: 11%;
-      width: 78.5%;
-      height: 16%;
-      background-color: white;
-      border-radius: 5px;
-      text-indent: 0.25em;
-      font: normal 36px JustAnotherHandRegular, helvetica, sans-serif;
-      line-height: 140%;
-      color: #111;
-      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
-      box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      z-index: 6;
-      opacity: 0.8; }
-    .music .cassetteContainer .midContainer .topConnector {
-      position: absolute;
-      width: 180px;
-      height: 2px;
-      background-color: black;
-      left: 22%;
-      top: 17%;
-      -webkit-transform: rotate(24deg) translate(40%, 60%);
-          -ms-transform: rotate(24deg) translate(40%, 60%);
-              transform: rotate(24deg) translate(40%, 60%); }
-    .music .cassetteContainer .midContainer .bottomConnector {
-      position: absolute;
-      width: 180px;
-      height: 2px;
-      background-color: black;
-      left: 22%;
-      top: 81%;
-      -webkit-transform: rotate(-24deg) translate(40%, 60%);
-          -ms-transform: rotate(-24deg) translate(40%, 60%);
-              transform: rotate(-24deg) translate(40%, 60%); }
-    .music .cassetteContainer .midContainer .reelBlackRight {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: black;
-      border: 5px solid white;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-              transform: translate(0, -50%);
-      right: 22%; }
-    .music .cassetteContainer .midContainer .reel-maskRight {
-      position: absolute;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      background-color: white;
-      border: 5px solid white;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-              transform: translate(0, -50%);
-      right: 0;
-      left: 43.7%; }
-    .music .cassetteContainer .midContainer .reel-maskLeft {
-      position: absolute;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      background-color: white;
-      border: 5px solid white;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-              transform: translate(0, -50%);
-      left: 8%; }
-    .music .cassetteContainer .midContainer .gearPin1 {
-      width: 10px;
-      height: 10px;
-      background-color: white;
-      -webkit-transform: rotate(39deg) translate(60%);
-          -ms-transform: rotate(39deg) translate(60%);
-              transform: rotate(39deg) translate(60%); }
-    .music .cassetteContainer .midContainer .gearPin2 {
-      width: 10px;
-      height: 10px;
-      float: right;
-      background-color: white;
-      -webkit-transform: rotate(39deg) translate(-70%, -19%);
-          -ms-transform: rotate(39deg) translate(-70%, -19%);
-              transform: rotate(39deg) translate(-70%, -19%); }
-    .music .cassetteContainer .midContainer .gearPin3 {
-      width: 10px;
-      height: 10px;
-      background-color: white;
-      -webkit-transform: rotate(39deg) translate(300%, 250%);
-          -ms-transform: rotate(39deg) translate(300%, 250%);
-              transform: rotate(39deg) translate(300%, 250%); }
-    .music .cassetteContainer .midContainer .gearPin4 {
-      width: 10px;
-      height: 10px;
-      background-color: white;
-      -webkit-transform: rotate(39deg) translate(520%, -100%);
-          -ms-transform: rotate(39deg) translate(520%, -100%);
-              transform: rotate(39deg) translate(520%, -100%); }
-    .music .cassetteContainer .midContainer .rightGear {
-      position: absolute;
-      right: 25%;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background-color: grey;
-      border: 5px solid white;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-              transform: translate(0, -50%); }
-    .music .cassetteContainer .bottomContainer {
-      position: absolute;
-      width: 100%;
-      height: 50px;
-      background-color: white;
-      opacity: 0.3;
-      bottom: 0px; }
-      .music .cassetteContainer .bottomContainer .screwBLeft {
-        margin-top: 5%;
-        margin-left: 1%; }
-      .music .cassetteContainer .bottomContainer .screwBRight {
-        margin-top: -3%;
-        margin-left: 96%; }
-      .music .cassetteContainer .bottomContainer .railMiddle {
-        opacity: 0.5;
-        border-bottom: 50px solid grey;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        height: 0;
-        width: 300px; }
-      .music .cassetteContainer .bottomContainer .holeLeft {
-        position: relative;
-        opacity: 1;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: white;
-        margin-top: 30px;
-        float: left; }
-      .music .cassetteContainer .bottomContainer .holeRight {
-        position: relative;
-        opacity: 1;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: white;
-        margin-top: 28px;
-        float: right; }
-      .music .cassetteContainer .bottomContainer .screwMiddle {
-        opacity: 1;
-        top: 10px; }
-      .music .cassetteContainer .bottomContainer .tapePad {
-        position: relative;
-        width: 70px;
-        height: 20px;
-        background-color: black;
-        bottom: 0;
-        top: 80%; }
-        .music .cassetteContainer .bottomContainer .tapePad .padContainer {
-          width: 40px;
-          height: 10px;
-          background-color: white;
-          bottom: 0;
-          top: 80%; }
-
-.screwCross .line1 {
-  height: 7px;
-  width: 1px;
-  background-color: white; }
-.screwCross .line2 {
-  height: 1px;
-  width: 7px;
-  background-color: white; }
-
-.screw {
-  position: relative;
-  opacity: 1;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: black; }
-
-/* Common style */
-.skillzSection {
-  display: inline-block;
-  width: 50%;
-  margin-left: 25%;
-  text-align: center;
-  margin-top: 100px;
-  list-style: none; }
-
-.grid {
-  position: relative;
-  margin: 0;
-  padding: 3em 0 0 0;
-  text-align: center;
-  opacity: 1;
-  height: 350px; }
-
-.skillPanelContainer li:nth-child(even) {
-  margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%; }
-  .skillPanelContainer li:nth-child(even) .skillDescription {
-    text-align: left;
-    float: right;
-    width: 50%;
-    font-size: 20px;
-    margin-top: 10%;
-    margin-right: 4%;
-    opacity: 0; }
-  .skillPanelContainer li:nth-child(even) .skillList {
-    float: left; }
-
-.skillPanelContainer li:nth-child(odd) {
-  margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%; }
-  .skillPanelContainer li:nth-child(odd) .skillDescription {
-    text-align: left;
-    float: left;
-    width: 50%;
-    font-size: 20px;
-    margin-top: 10%;
-    margin-left: 4%;
-    opacity: 0; }
-  .skillPanelContainer li:nth-child(odd) .skillList {
-    float: right; }
-
-.grid figure {
-  position: absolute;
-  z-index: 1;
-  margin: -0.135em;
-  width: 300px;
-  height: 300px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-1, #FFFFFF), color-stop(0.4, #000000));
-  text-align: center;
-  cursor: pointer;
-  float: left;
-  margin-left: 30%; }
-
-.grid figure img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: 0.8; }
-
-.grid figure figuretag {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.grid figure h2, .grid figure p {
-  margin: 0; }
-
-.grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%; }
-
-.skillList {
-  background: -webkit-linear-gradient(top, #258dc8 0%, #683c13 100%);
-  background: linear-gradient(to bottom, #258dc8 0%, #683c13 100%); }
-
-.skillList img {
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s; }
-
-.skillList:hover img {
-  opacity: 0.4; }
-
-.skillList:hover figuretag::after {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.skillList figuretag {
-  padding: 3em;
-  text-align: left; }
-
-.skillContainer {
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
-
-.skillList p {
-  right: 60px;
-  bottom: 60px;
-  left: 60px;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0, -10px, 0);
-  transform: translate3d(0, -10px, 0); }
-
-.skillList:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 70px, 0); }
-
-.skillAnim {
-  -webkit-animation: skillAnimKeyframe 1s linear;
-          animation: skillAnimKeyframe 1s linear;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards; }
-
-.skillPanelContainer li:nth-child(even).moveSkill .appearDescrip {
-  -webkit-animation: appearDescripAnim 1s linear;
-          animation: appearDescripAnim 1s linear;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards; }
-
-.skillPanelContainer li:nth-child(odd).moveSkill .appearDescrip {
-  -webkit-animation: appearDescripAnim 1s linear;
-          animation: appearDescripAnim 1s linear;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards; }
-
-.skillPanelContainer li:nth-child(even).moveSkill figure {
-  -webkit-animation: moveSkillFrame 0.5s linear;
-          animation: moveSkillFrame 0.5s linear;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards; }
-
-.skillPanelContainer li:nth-child(odd).moveSkill figure {
-  -webkit-animation: moveSkillFrame2 0.5s linear;
-          animation: moveSkillFrame2 0.5s linear;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards; }
-
-@-webkit-keyframes moveSkillFrame {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%); }
-
-  50% {
-    -webkit-transform: translateX(-60%);
-            transform: translateX(-60%); }
-
-  100% {
-    -webkit-transform: translateX(-80%);
-            transform: translateX(-80%); } }
-
-@keyframes moveSkillFrame {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%); }
-
-  50% {
-    -webkit-transform: translateX(-60%);
-            transform: translateX(-60%); }
-
-  100% {
-    -webkit-transform: translateX(-80%);
-            transform: translateX(-80%); } }
-
-@-webkit-keyframes moveSkillFrame2 {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%); }
-
-  50% {
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%); }
-
-  100% {
-    -webkit-transform: translateX(80%);
-            transform: translateX(80%); } }
-
-@keyframes moveSkillFrame2 {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%); }
-
-  50% {
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%); }
-
-  100% {
-    -webkit-transform: translateX(80%);
-            transform: translateX(80%); } }
-
-@-webkit-keyframes appearDescripAnim {
-  0% {
-    opacity: 0; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@keyframes appearDescripAnim {
-  0% {
-    opacity: 0; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes skillAnimKeyframe {
-  100% {
-    opacity: 1; } }
-
-@keyframes skillAnimKeyframe {
-  100% {
-    opacity: 1; } }
+@font-face {
+  font-family: "hand";
+  src: url("../assets/hand.ttf"); }
 
 * {
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0; }
 
 *:after, *::before {
   -moz-box-sizing: border-box;
@@ -1023,7 +550,8 @@
   display: inline-block;
   margin-top: 3%;
   width: 100%;
-  float: left; }
+  float: left;
+  margin-bottom: 50px; }
   .bossContainer .bossInfo {
     position: relative;
     margin: 0 auto;
@@ -1083,7 +611,8 @@
     display: inline-block;
     text-decoration: none;
     color: black;
-    height: 129px; }
+    height: 129px;
+    margin-bottom: 50px; }
     .socialNetworks .mega-anchor .socialIcon {
       -webkit-filter: grayscale(1);
       filter: grayscale(1);
@@ -1139,7 +668,7 @@
       padding: 30px 20px;
       width: 100%;
       background: #fff;
-      color: #0f7c67;
+      color: grey;
       -webkit-transition: -webkit-transform 0.3s;
       transition: transform 0.3s;
       -webkit-transform: translateX(-25%); }
@@ -1226,10 +755,15 @@
   -ms-transform: translateX(1%);
       transform: translateX(1%); }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 .footer {
   position: absolute;
-  height: 150px;
-  background-color: grey; }
+  height: 100px;
+  width: 100%;
+  left: 0; }
 
 .camping {
   position: relative;
@@ -1340,18 +874,376 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-@media screen and (max-width: 1500px) {
-  .bossImage {
-    display: none; }
-  .socialIcon {
-    height: 50px;
-    margin: 100px 10px; }
-  .facebookIcon {
-    height: 50px;
-    background-size: contain;
-    background-position: center;
-    margin: 100px 10px; }
-  .faceError {
-    display: none; }
+@media screen and (max-width: 1200px) {
   .skillzSection {
     display: none; } }
+
+@media screen and (max-width: 1300px) {
+  .bossDescription {
+    opacity: 0; }
+  .bossDesc {
+    opacity: 0; }
+  .skillzSection {
+    display: none; } }
+
+.football {
+  margin-top: -23%; }
+
+.thingsSection {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  margin-top: 100px; }
+
+.thingsContainer {
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  position: relative; }
+
+.thingsElement {
+  width: 100%;
+  height: 500px;
+  display: inline-block;
+  margin-bottom: 10%; }
+
+.thingsDesc {
+  margin-top: 10%;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 1%; }
+
+ins {
+  display: inline-block;
+  font-style: italic;
+  font: normal 26px hand, helvetica, sans-serif;
+  margin-left: -0.5em;
+  margin-right: 0.3em;
+  position: relative;
+  top: -0.25em;
+  text-decoration: none;
+  -webkit-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg); }
+  ins:after {
+    border-bottom: 1px solid;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: -0.5em;
+    -webkit-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+    width: 98%; }
+
+.nospace {
+  top: -200px; }
+
+.or-spacer {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin-top: 100px; }
+  .or-spacer .mask {
+    overflow: hidden;
+    height: 20px; }
+    .or-spacer .mask:after {
+      content: '';
+      display: block;
+      margin: -25px auto 0;
+      width: 100%;
+      height: 25px;
+      border-radius: 125px/12px;
+      box-shadow: 0 0 8px black; }
+  .or-spacer span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -25px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px #999;
+    background: white; }
+  .or-spacer span i {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed #aaa;
+    text-align: center;
+    line-height: 40px;
+    font-style: normal;
+    color: #999; }
+
+.thing {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: 8% auto; }
+  .thing .cassetteContainer {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    background-color: grey; }
+    .thing .cassetteContainer .topContainer {
+      position: relative;
+      width: 100%;
+      height: 30px;
+      background-color: white;
+      opacity: 0.3; }
+      .thing .cassetteContainer .topContainer .screwLeft {
+        margin-left: 2%;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%); }
+      .thing .cassetteContainer .topContainer .screwRight {
+        margin-left: 94%;
+        margin-top: -2%; }
+    .thing .cassetteContainer .midContainer .leftGear {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: grey;
+      border: 5px solid white;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      left: 25%; }
+    .thing .cassetteContainer .midContainer .reelBlack {
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background-color: black;
+      border: 5px solid white;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      left: 8%; }
+    .thing .cassetteContainer .midContainer .label {
+      position: absolute;
+      top: 65%;
+      left: 11%;
+      width: 78.5%;
+      height: 16%;
+      background-color: white;
+      border-radius: 5px;
+      text-indent: 0.25em;
+      font: normal 36px JustAnotherHandRegular, helvetica, sans-serif;
+      line-height: 140%;
+      color: #111;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      z-index: 6;
+      opacity: 0.8; }
+    .thing .cassetteContainer .midContainer .topConnector {
+      position: absolute;
+      width: 180px;
+      height: 2px;
+      background-color: black;
+      left: 22%;
+      top: 17%;
+      -webkit-transform: rotate(24deg) translate(40%, 60%);
+          -ms-transform: rotate(24deg) translate(40%, 60%);
+              transform: rotate(24deg) translate(40%, 60%); }
+    .thing .cassetteContainer .midContainer .bottomConnector {
+      position: absolute;
+      width: 180px;
+      height: 2px;
+      background-color: black;
+      left: 22%;
+      top: 81%;
+      -webkit-transform: rotate(-24deg) translate(40%, 60%);
+          -ms-transform: rotate(-24deg) translate(40%, 60%);
+              transform: rotate(-24deg) translate(40%, 60%); }
+    .thing .cassetteContainer .midContainer .reelBlackRight {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: black;
+      border: 5px solid white;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      right: 22%; }
+    .thing .cassetteContainer .midContainer .reel-maskRight {
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background-color: white;
+      border: 5px solid white;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      right: 0;
+      left: 43.7%; }
+    .thing .cassetteContainer .midContainer .reel-maskLeft {
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background-color: white;
+      border: 5px solid white;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      left: 8%; }
+    .thing .cassetteContainer .midContainer .gearPin1 {
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      -webkit-transform: rotate(39deg) translate(60%);
+          -ms-transform: rotate(39deg) translate(60%);
+              transform: rotate(39deg) translate(60%); }
+    .thing .cassetteContainer .midContainer .gearPin2 {
+      width: 10px;
+      height: 10px;
+      float: right;
+      background-color: white;
+      -webkit-transform: rotate(39deg) translate(-70%, -19%);
+          -ms-transform: rotate(39deg) translate(-70%, -19%);
+              transform: rotate(39deg) translate(-70%, -19%); }
+    .thing .cassetteContainer .midContainer .gearPin3 {
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      -webkit-transform: rotate(39deg) translate(300%, 250%);
+          -ms-transform: rotate(39deg) translate(300%, 250%);
+              transform: rotate(39deg) translate(300%, 250%); }
+    .thing .cassetteContainer .midContainer .gearPin4 {
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      -webkit-transform: rotate(39deg) translate(520%, -100%);
+          -ms-transform: rotate(39deg) translate(520%, -100%);
+              transform: rotate(39deg) translate(520%, -100%); }
+    .thing .cassetteContainer .midContainer .rightGear {
+      position: absolute;
+      right: 25%;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: grey;
+      border: 5px solid white;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+    .thing .cassetteContainer .bottomContainer {
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      opacity: 0.3;
+      bottom: 0px; }
+      .thing .cassetteContainer .bottomContainer .screwBLeft {
+        margin-top: 5%;
+        margin-left: 1%; }
+      .thing .cassetteContainer .bottomContainer .screwBRight {
+        margin-top: -3%;
+        margin-left: 96%; }
+      .thing .cassetteContainer .bottomContainer .railMiddle {
+        opacity: 0.5;
+        border-bottom: 50px solid grey;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        height: 0;
+        width: 300px; }
+      .thing .cassetteContainer .bottomContainer .holeLeft {
+        position: relative;
+        opacity: 1;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 30px;
+        float: left; }
+      .thing .cassetteContainer .bottomContainer .holeRight {
+        position: relative;
+        opacity: 1;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 28px;
+        float: right; }
+      .thing .cassetteContainer .bottomContainer .screwMiddle {
+        opacity: 1;
+        top: 10px; }
+      .thing .cassetteContainer .bottomContainer .tapePad {
+        position: relative;
+        width: 70px;
+        height: 20px;
+        background-color: black;
+        bottom: 0;
+        top: 80%; }
+        .thing .cassetteContainer .bottomContainer .tapePad .padContainer {
+          width: 40px;
+          height: 10px;
+          background-color: white;
+          bottom: 0;
+          top: 80%; }
+
+.screwCross .line1 {
+  height: 7px;
+  width: 1px;
+  background-color: white; }
+.screwCross .line2 {
+  height: 1px;
+  width: 7px;
+  background-color: white; }
+
+.screw {
+  position: relative;
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black; }
+
+.myBlog {
+  background-image: url(/assets/eu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 50px;
+  float: left;
+  position: relative; }
+
+.myBlogDes {
+  float: left;
+  position: relative;
+  width: 50px;
+  color: white;
+  font-size: 20px; }
+
+#clouds path {
+  fill: grey;
+  stroke: grey; }
+
+.clouds {
+  background: grey; }

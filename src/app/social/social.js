@@ -4,7 +4,7 @@ app.controller('socialController', ['$scope', function($scope){
                     name: "Twitter",
                     id: "twitter",
                     link: "http://www.twitter.com/LuisCSPinho",
-                    description: "Want know where am I flying?",
+                    description: "Want to know where am I flying?",
                     dataHover: "Or you can just mess around!",
                     className: "socialIcon",
                     path: "/assets/twitter.png",
@@ -25,7 +25,7 @@ app.controller('socialController', ['$scope', function($scope){
                     id: "github",
                     link: "https://github.com/luiscspinho/",
                     description: "Some code of my own?",
-                    dataHover: "Be careful.",
+                    dataHover: "Including this site.",
                     className: "socialIcon",
                     path: "/assets/github.png",
                     animation: false
@@ -45,7 +45,7 @@ app.controller('socialController', ['$scope', function($scope){
                     id: "facebook",
                     link: "http://luispinhodoesnthavefacebook.com/",
                     description: "Simply my facebook page",
-                    dataHover: "Oh noes, you didn't...",
+                    dataHover: "I am sorry...",
                     className: "facebookIcon",
                     path: "/assets/blank.png",
                     animation: true,
@@ -53,12 +53,12 @@ app.controller('socialController', ['$scope', function($scope){
                 }
                 ];
 
-    $scope.aboutMeInfo = "Hello. I am a QA Engineer with great passion for automation process, Front End technologies and web development. I am very passionate about Scrum and Agile methodologies. On spare time I enjoy listening to music, reading books and making contact with nature.";
+    $scope.aboutMeInfo = "QA Engineer with great passion for automation process, front-end technologies and web development. Fan of Scrum and Agile methodologies.";
 
     $scope.detailsAboutMe = {
-        name: "Luís Pinho",
-        age: "25",
-        email: "luiscspinho@gmail.com",
+        music: "lover.",
+        book: "enthusiast.",
+        travel: "passionate."
     };
 
     $scope.events = {

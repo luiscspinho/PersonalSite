@@ -27,7 +27,8 @@ gulp.task('sass', function() {
     });
     return combined;
 });
+
 // Default task to be run with `gulp`
-gulp.task('default', ['sass','browser-sync'], function() {
+gulp.task('default', ['sass', 'browser-sync'], function() {
     gulp.watch('styles/*.scss', ['sass']);
 });

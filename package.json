@@ -2,15 +2,13 @@
   "name": "Pinho",
   "version": "0.0.1",
   "description": "Personal Site",
-  "repository": {
-  },
-   "author": "Luís Pinho",
+  "repository": {},
+  "author": "Luís Pinho",
   "bugs": {
     "url": "https://github.com/antoniocapelo/awty/issues"
   },
   "homepage": "https://github.com/antoniocapelo/awty",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^0.7.5",
     "gulp": "^3.8.7",
