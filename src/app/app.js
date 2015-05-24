@@ -48,15 +48,18 @@ app.directive("social", function () {
 
 new Awty().init();
 
-  app.controller('cenas', ['$scope', '$http', function($scope, $http){   
+  app.controller('blogSupport', ['$scope', '$http', function($scope, $http){   
+
       $http({
              method: 'GET',
              url: 'http://antoniocapelo.com/api/trout/lastpost',
              //params: '',
              //headers: {'Authorization': 'Token token=xxxxYYYYZzzz'}
           }).success(function(data){
-             // With the data succesfully returned, call our callback
              console.log('succ',data);
+             $scope.image = data.image;
+             $scope.title = data.title;
+             $scope.url = data.url;
          }).error(function(){
              console.log("error");
          });

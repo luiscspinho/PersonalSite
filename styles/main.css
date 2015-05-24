@@ -145,9 +145,9 @@
     z-index: 1; }
 
 .animTrue .ball {
-  -webkit-animation: move 10s 1 forwards infinite;
-  -ms-animation: move 10s 1 forwards infinite;
-  animation: move 10s 1 forwards infinite; }
+  -webkit-animation: move 10s forwards infinite;
+  -ms-animation: move 10s forwards infinite;
+  animation: move 10s forwards infinite; }
 
 @-webkit-keyframes move {
   10% {
@@ -185,10 +185,10 @@
     -webkit-animation-timing-function: ease-out; } }
 
 .animTrue .animBFW {
-  -webkit-animation: moveBFW 10s 1 forwards infinite;
-  -oz-animation: moveBFW 10s 1 forwards infinite;
-  -ms-animation: moveBFW 10s 1 forwards infinite;
-  animation: moveBFW 10s 1 forwards infinite; }
+  -webkit-animation: moveBFW 10s forwards infinite;
+  -oz-animation: moveBFW 10s forwards infinite;
+  -ms-animation: moveBFW 10s forwards infinite;
+  animation: moveBFW 10s forwards infinite; }
 
 @-webkit-keyframes moveBFW {
 
@@ -207,9 +207,9 @@
     transform: translate(-50%, -50%); } }
 
 .animTrue .animBDC {
-  -webkit-animation: moveBDC 10s 1 forwards infinite;
-  -ms-animation: moveBDC 10s 1 forwards infinite;
-  animation: moveBDC 10s 1 forwards infinite; }
+  -webkit-animation: moveBDC 10s forwards infinite;
+  -ms-animation: moveBDC 10s forwards infinite;
+  animation: moveBDC 10s forwards infinite; }
 
 @-webkit-keyframes moveBDC {
 
@@ -222,9 +222,9 @@
     left: 75%; } }
 
 .animTrue .animBMF {
-  -webkit-animation: moveBMF 10s 1 forwards infinite;
-  -ms-animation: moveBMF 10s 1 forwards infinite;
-  animation: moveBMF 10s 1 forwards infinite; }
+  -webkit-animation: moveBMF 10s forwards infinite;
+  -ms-animation: moveBMF 10s forwards infinite;
+  animation: moveBMF 10s forwards infinite; }
 
 @-webkit-keyframes moveBMF {
   0% {
@@ -239,9 +239,9 @@
     left: 30%; } }
 
 .animTrue .animBAMF {
-  -webkit-animation: moveBAMF 10s 1 forwards infinite;
-  -ms-animation: moveBAMF 10s 1 forwards infinite;
-  animation: moveBAMF 10s 1 forwards infinite; }
+  -webkit-animation: moveBAMF 10s forwards infinite;
+  -ms-animation: moveBAMF 10s forwards infinite;
+  animation: moveBAMF 10s forwards infinite; }
 
 @-webkit-keyframes moveBAMF {
   0% {
@@ -256,9 +256,9 @@
     left: 50%; } }
 
 .animTrue .animAGK {
-  -webkit-animation: moveAGK 10s 1 forwards infinite;
-  -ms-animation: moveAGK 10s 1 forwards infinite;
-  animation: moveAGK 10s 1 forwards infinite; }
+  -webkit-animation: moveAGK 10s forwards infinite;
+  -ms-animation: moveAGK 10s forwards infinite;
+  animation: moveAGK 10s forwards infinite; }
 
 @-webkit-keyframes moveAGK {
   0% {
@@ -277,9 +277,9 @@
     left: 1%; } }
 
 .animTrue .animAAMF {
-  -webkit-animation: moveAAMF 10s 1 forwards infinite;
-  -ms-animation: moveAAMF 10s 1 forwards infinite;
-  animation: moveAAMF 10s 1 forwards infinite; }
+  -webkit-animation: moveAAMF 10s forwards infinite;
+  -ms-animation: moveAAMF 10s forwards infinite;
+  animation: moveAAMF 10s forwards infinite; }
 
 @-webkit-keyframes moveAAMF {
   0% {
@@ -294,9 +294,9 @@
     left: 65%; } }
 
 .animTrue .animADE {
-  -webkit-animation: moveADE 10s 1 forwards infinite;
-  -ms-animation: moveADE 10s 1 forwards infinite;
-  animation: moveADE 10s 1 forwards infinite; }
+  -webkit-animation: moveADE 10s forwards infinite;
+  -ms-animation: moveADE 10s forwards infinite;
+  animation: moveADE 10s forwards infinite; }
 
 @-webkit-keyframes moveADE {
   0% {
@@ -311,9 +311,9 @@
     left: 35%; } }
 
 .animTrue .animADD {
-  -webkit-animation: moveADD 10s 1 forwards infinite;
-  -ms-animation: moveADD 10s 1 forwards infinite;
-  animation: moveADD 10s 1 forwards infinite; }
+  -webkit-animation: moveADD 10s forwards infinite;
+  -ms-animation: moveADD 10s forwards infinite;
+  animation: moveADD 10s forwards infinite; }
 
 @-webkit-keyframes moveADD {
   0% {
@@ -328,9 +328,9 @@
     left: 45%; } }
 
 .animTrue .animADC {
-  -webkit-animation: moveADC 10s 1 forwards infinite;
-  -ms-animation: moveADC 10s 1 forwards infinite;
-  animation: moveADC 10s 1 forwards infinite; }
+  -webkit-animation: moveADC 10s forwards infinite;
+  -ms-animation: moveADC 10s forwards infinite;
+  animation: moveADC 10s forwards infinite; }
 
 @-webkit-keyframes moveADC {
   0% {
@@ -421,16 +421,11 @@
 * {
   font-family: 'Roboto', sans-serif;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0; }
+  box-sizing: border-box; }
 
 *:after, *::before {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-.body {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
 
 .beautyLanding {
   width: 100%;
@@ -464,7 +459,8 @@
       font-size: 40px;
       text-align: left;
       left: 85px;
-      top: 52px; }
+      top: 52px;
+      color: black; }
   .beautyLanding .arrowDownContainer {
     height: 80px;
     width: 110px;
@@ -556,7 +552,8 @@
     position: relative;
     margin: 0 auto;
     max-width: 960px;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 170px; }
     .bossContainer .bossInfo .bossDescription {
       float: left;
       width: 33%; }
@@ -755,15 +752,30 @@
   -ms-transform: translateX(1%);
       transform: translateX(1%); }
 
-a {
-  text-decoration: none;
-  color: black; }
-
 .footer {
   position: absolute;
   height: 100px;
   width: 100%;
-  left: 0; }
+  left: 0;
+  background-color: grey; }
+
+.myBlog {
+  background-image: url(/assets/eu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 50px;
+  float: left;
+  left: 45%;
+  position: relative; }
+
+.myBlogDes {
+  float: left;
+  position: relative;
+  width: 50px;
+  color: white;
+  font-size: 20px; }
 
 .camping {
   position: relative;
@@ -942,10 +954,13 @@ ins {
   top: -200px; }
 
 .or-spacer {
-  width: 100%;
+  margin-top: 100px;
+  margin-left: 50%;
+  width: 400px;
   position: relative;
-  display: inline-block;
-  margin-top: 100px; }
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
   .or-spacer .mask {
     overflow: hidden;
     height: 20px; }
@@ -985,13 +1000,13 @@ ins {
   position: relative;
   width: 500px;
   height: 300px;
-  margin: 8% auto; }
+  margin-left: 50%;
+  margin-top: 8%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
   .thing .cassetteContainer {
     position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
     width: 100%;
     height: 300px;
     border-radius: 12px;
@@ -1223,27 +1238,3 @@ ins {
   height: 15px;
   border-radius: 50%;
   background-color: black; }
-
-.myBlog {
-  background-image: url(/assets/eu.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100%;
-  width: 50px;
-  float: left;
-  position: relative; }
-
-.myBlogDes {
-  float: left;
-  position: relative;
-  width: 50px;
-  color: white;
-  font-size: 20px; }
-
-#clouds path {
-  fill: grey;
-  stroke: grey; }
-
-.clouds {
-  background: grey; }
